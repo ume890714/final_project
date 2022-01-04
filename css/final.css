@@ -36,20 +36,20 @@ html {
     padding: 50px;
     line-height: 40px;
     max-width: 75vw;
-    height: 25vh;
+    /* height: 25vh; */
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 
-iframe {
-    width: 90vw;
-    height: 100vh;
+iframe{
+    width: 50%;
+    height: 70%;
     max-width: 900px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-}
+  }
 
 .small-pic {
     position: absolute;
