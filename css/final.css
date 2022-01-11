@@ -101,6 +101,10 @@
     a{
       text-decoration:none;
     }
+
+    a:hover{
+      color: white;
+    }
     
     .btn{
       padding: 10px 20px;
