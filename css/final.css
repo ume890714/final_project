@@ -97,6 +97,10 @@
     .timeline{
       stroke: black;
     }
+
+    a{
+      text-decoration:none;
+    }
     
     .btn{
       padding: 10px 20px;
@@ -104,6 +108,7 @@
       background-color: #fff;
       display: inline-block;
       cursor: pointer;
+      color: #333;
     }
     
     .btn:hover{
