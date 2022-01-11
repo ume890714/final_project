@@ -1,169 +1,516 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/final.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700;900&display=swap" rel="stylesheet">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <div class="section" style="width: 100vw; height: 1000vh; background-color: white;">
-      <!--   漫畫 -->
-        <img src="https://1.bp.blogspot.com/-8sRUTHQTmG4/YLw21H5UT6I/AAAAAAABd1c/pjjmZpiKdXkO_uj2w7SPsbZ6b4_s_A47ACNcBGAsYHQ/s1215/stand1_front10_obaasan_long.png" class="img-fluid slideanimate" 
-             data-pos = 500 data-direction="fadeInUp" 
-             style="position:sticky;left:80%;top:0px;width: 10%;">
-        
-        <img src="https://1.bp.blogspot.com/-yNEMpyTyX3o/X7zMjPLJdjI/AAAAAAABcdE/ZjQGxrQ2yQU5CATJhEOXrqr4cU8r7GRbwCNcBGAsYHQ/s726/shibasuberi_danbo-ru_boy.png" class="img-fluid slideanimate" 
-             data-pos = 1500 data-direction="fadeInUp" 
-             style="position:sticky;left:10%;top: 80%;width:10%;">
-        
-        <img src="https://1.bp.blogspot.com/-DkZ-R9OkexI/W9RZOh8WUKI/AAAAAAABPnc/aN7Sj4rBaDYWjuivXWY6vIZuILph16ZTACLcBGAs/s600/zabuton_tv_tango.png" class="img-fluid slideanimate" 
-             data-pos = 2000 data-direction="fadeInRight" 
-             style="position:sticky;left:20%;top:5%;width: 50%;">
-        
-        <img src="https://1.bp.blogspot.com/-DkZ-R9OkexI/W9RZOh8WUKI/AAAAAAABPnc/aN7Sj4rBaDYWjuivXWY6vIZuILph16ZTACLcBGAs/s600/zabuton_tv_tango.png" class="img-fluid slideanimate" 
-             data-pos = 3000 data-direction="fadeInRight" 
-             style="position:sticky;left:30%;top:80%;width: 50%;">
-        <div id="title" class="slideanimate" style="position: sticky; top:0; height: 100vh; background-color: rgba(0,0,0,0.5);" data-pos = 3500 data-direction="fadeInUp" class=""></div>
-        <h1  class="slideanimate h1" data-pos = 4000 data-direction="fadeInUp"
-            style="position: sticky; top: 40%; transform: translateY(-50%); font-family: 'Noto Serif TC', serif;">消失的文化？<br>現代臺語歌的對抗與認同</h1>  
-      
-      </div>
-      <div class="section" style="background-image: url(mat_lamp.jpg); height: 150vh;">
-        <p class="text-center p">這裡放前言文字（以下為範例）<br>
-      經歷了戒嚴時期的「國語運動」後，許多臺灣的本土語言都逐漸失去了本來的面貌，自1990年代的新臺語歌運動後，近年來臺語流行歌曲又受到大眾關注，在 2018 年年底《國家語言發展法》三讀通過，更透過立法希望去保障臺灣各固有族群之自然語言的傳承、復振及發展。本新聞專題期待透過臺語歌曲近年來的復甦、價值追求，引領讀者重新感受臺語文化的多元樣貌。
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/final.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700;900&display=swap"
+    rel="stylesheet">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <!-- 標題 -->
+  <div style="height: 300vh; position: relative;">
+    <div style="position: sticky; top: 0%; height: 100vh; width: 100vw; background: #000;">
+      <video autoplay muted loop style="position: sticky; left: 0; top: 0; width: 100vw; height: 100vh;"
+        src="heading.mp4"></video>
+      <h1 class="h1" style="position: absolute; top: 15%; transform: translateY(-50%); font-family: 'Noto Serif TC', serif; color: white; font-weight: 900;
+        left: 50%; transform: translateX(-50%); text-align: left;">
+        在最好也最壞的年代，<br>
+        唱出臺語歌的未來
+      </h1>
+
+      <p class="slideanimate h1" data-pos=100 data-direction="fadeInUp" style="position: absolute; top: 60%; transform: translateY(-50%); 
+    font-family: 'Noto Serif TC', serif; color: white; font-weight: 500; font-size: 24px; width: 100%;">
+        「你上一次講臺語，是什麼時候？」<br>lí
+        tíng-pái kóng tâi-gí, sī siánn-mih sî-tsūn</p>
+    </div>
+
+  </div>
+
+  <!-- 前言 -->
+
+  <div style="height: 100vh; background-color: #555;">
+    <div
+      style="position: relative; height: 60vh; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
+      <img style="width: 30vw; position: relative; float: right;" src="data-01.png" alt="">
+      <p
+        style="position: relative;width: 50vw; font-weight:700; font-size: 18px; color: white; top: 30%; transform: translateY(-50%);">
+        臺語在聯合國教科文組織定義的瀕危語言六等級中，<br>
+        被列為第三級──「重大危險」，<br>
+        也就是祖父母會說,但不常對小孩使用，<br>
+        存在傳承的危機。</p>
+      <p
+        style="position: relative;width: 50vw; font-weight: 500; font-size: 16px; color: white; top: 40%; transform: translateY(-50%);">
+        （註：「臺語」一詞如何使用仍是爭議，<br>
+        本篇文章中所稱之「臺語」乃指「台灣閩南語」，<br>
+        使用此一詞乃因目前社會大眾依舊普遍以「臺語」，<br>
+        這個詞來形容「臺灣閩南語」。）
       </p>
+    </div>
+
+  </div>
+
+  <div style="height: 100vh; background-color: #555;">
+    <div
+      style="position: relative; height: 60vh; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
+
+      <p style="float: right;position: relative; font-weight: 700; font-size: 18px; color: white; 
+      top: 50%; transform: translateY(-50%);">
+        2013年「家中最常說的語言」調查研究，<br>
+        年輕人(20-28歲)說臺語的比例僅剩22.3%，<br>
+        更不用說是2022年的現在，<br>
+        情況更為嚴峻。</p>
+      <img style="width: 30vw; position: relative; top: 50%; transform: translateY(-50%);" src="data-02.png" alt="">
+
+    </div>
+
+  </div>
+
+  <div style="height: 500vh; background-color: #555;">
+    <div style="position: sticky; width: 100vw; height: 100vh; top: 0%;">
+
+      <div
+        style="overflow: hidden;position: relative; height: 80vh; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
+        <p style="font-weight: 700; font-size: 18px; color: white;">
+          在當前以華語為主要語言的臺灣社會，許多長輩為了和孩子溝通、拉近距離，會捨棄講臺語，選擇使用陌生、
+          不流利的華語。<br>「年輕人會聽不會講臺語」、「阿媽跟鄰居說臺語，轉頭跟孫子說華語」是普遍的現象。</p>
+
+        <img class="slideanimate" data-pos=2000 data-direction="fadeInUp" style="width: 60%;  position: absolute; left: 20%; bottom:0px; transform:translateY(-50%) translateX(-50%);
+        background-color: #444;" src="comic-01.PNG" alt="">
+        <img class="slideanimate" data-pos=3500 data-direction="fadeInUp" style="width: 60%;  position: absolute; left: 20%; bottom:0px; transform:translateY(-50%) translateX(-50%);
+        background-color: #444;" src="comic-02.PNG" alt="">
+        <img class="slideanimate" data-pos=4000 data-direction="fadeInUp" style="width: 60%;  position: absolute; left: 20%; bottom:0px; transform:translateY(-50%) translateX(-50%);
+        background-color: #444;" src="comic-03.PNG" alt="">
       </div>
-      
-      <!-- 大圖移動 -->
-      <div class="section" style="background-color: white; height: 100vh;">
-        <h1 class="h1" style="color: black;">1990年代臺語歌<br>大圖移動</h1>
-        <!-- <img class="small-pic" src="https://i.imgur.com/H00eKp0.jpg" alt=""> -->
-        <svg viewbox="0 0 -50 -50">
-          <line class=timeline x1=5 y1=0 x2=5 y2=20></line>
-        </svg>
-      </div>
-      
-      <!-- 台語流失數據 -->
-      
-      <!-- 銜接 -->
-      <div class="section" style="background-image: url(mat_record.jpg); height: 100vh;">
-        <h1 class="h1" style="position: relative; top: 50%; transform: translateY(-50%);">臺語歌手專訪</h1>
-      </div>
-      
-      <!-- <div class="section">
-        <div style="display: inline-block;position: relative;top: 50%; left: 50%;transform: translateY(-50%) translateX(-50%);">
-          <img class="icon" src="https://i.imgur.com/AEObTWt.png" alt="">
-          <img class="icon" src="https://i.imgur.com/AEObTWt.png" alt="">
-          <img class="icon" src="https://i.imgur.com/AEObTWt.png" alt="">
+    </div>
+  </div>
+
+
+  <div style="height: 100vh; background-color: #333;">
+    <div
+      style="position: relative; height: 60vh; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
+      <p style="position: relative; font-weight:700; font-size: 18px; color: white; 
+        top: 50%; transform: translateY(-50%);">
+        過去政策力推「國語」，臺語逐漸凋零，預計再過30〜40年，若現在的狀況持續，臺語將會消失。</p>
+    </div>
+
+  </div>
+
+  <div style="height: 100vh; overflow:hidden; position: relative;">
+    <video style="height: 120vh; position: relative; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);"
+      autoplay muted loop src="turning.mp4"></video>
+    <p style="position: absolute; font-weight:700; font-size: 18px; color: white; 
+    top: 50%; transform: translateY(-50%); left: 10%; width: 50vw;">
+      臺語，曾經是臺灣最多人使用的語言。<br>
+      然而在時代變遷下，臺語也正以超乎想像的速度流失。<br><br>
+
+      音樂反映社會的脈動，不同年代的臺語歌轉譯著政治的壓迫、
+      思想的衝撞、自由的渴望，以及時代巨輪下不斷流動的平凡日常。<br><br>
+
+      從本土臺語歌近百年的發展，可以看見臺語在生活裡的面貌。</p>
+  </div>
+
+  <!-- 大圖移動 -->
+  <div id="year">
+    <!--   黑 -->
+    <div style="height: 2000vh; position: relative;">
+      <svg style="position: absolute; height: 1900vh; width: 5vh; top: 30vh; right: 5%;">
+        <line x1=0 y1=0 x2=0 y2=200000 style="stroke: #868686; stroke-width: 3px;"></line>
+      </svg>
+
+
+      <!--     黑 -->
+      <img data-pos="2" class="img opa"
+        src="https://lh3.googleusercontent.com/SP5hOqKmxkLLCsg40bYxlWwQ9yfbKmVoPTV5CLpRuRwpUDktY_Bvls4_xNR3f4NXABltidfeG4pefIGEyzPXEal7KbaHJtnhv6rJj42ShsIxnINR_3REiLncdIA57JPPVg_5QO2iYg=w2400"
+        alt="" style="z-index: -1;position:  sticky; top: 0px;width: 100vw; height: 100vh;">
+
+
+
+      <!--   1925-1937 -->
+      <div
+        style="height: 200vh; background-image: url(https://lh3.googleusercontent.com/x7wgFEdlKuVydv-ERJ6GPYeybLSHYrBAzxSth5D7sH1rl49ry-vAqPSYV0J25b9Cuj23mow-V3Quz8H0TfoqoXCWhhOXWGfYxqawuXqk-9zuj-h6oPJ_tsbkZwwPz0HD1gzMnlvw0g=w2400); 
+        background-attachment: fixed; background-size: contain; background-repeat: no-repeat; background-position: 0% 50%;">
+        <div style=" width: 20vw;position: relative; left: 70%; top: 50vh;">
+          <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
+            <circle cx=15 cy=15 r=5 style="fill: #c4c4c4;"></circle>
+          </svg>
+          <p
+            style="line-height: 40px;color: white; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
+            1925-1937</p>
+          <p style="line-height: 40px;color: white; letter-spacing: 1px;">
+            臺灣本土創作歌曲全盛時期，鄧雨賢作曲的〈望春風〉、〈四季紅〉、〈月夜愁〉等，都是至今人人依舊耳熟能詳的歌謠。
+          </p>
         </div>
-        
-      </div> -->
+
+      </div>
+
+
+      <!--   1932 -->
+      <div style="height: 150vh; 
+                    background-image: url(https://lh3.googleusercontent.com/Mrv-FZJBUPdc_CAMn0kB2FHKWjUJPTZmA4MvYFQ_Pho7q9a9ftK1Y3Q_kFBkWGpZrw0lPNCdQhU5QKqLkOy2-aHZouxvrA2cROlvFcRZSLeeJeoJEVf7CQ9fOZ8yXoEpfL1k5pFn3g=w2400),
+                                      url(https://lh3.googleusercontent.com/my1nOY0TJre12QaGNpBKTBdEWYOggLo1wyuAFl3HrfMYJYxaLg_FM9-M4rKxfrJPzdLBcA8eJ9d8clviev0YCMJ-odQgihzHVYeu8i_g2fRWdMPVPRcwWCaIr1aeMEPWDufqcP-9SQ=w2400); 
+                    
+                    background-attachment: fixed; 
+                    background-size: contain,
+                                     20%; 
+                    background-repeat: no-repeat; 
+                    background-position: 0% 0%,
+                                         10% 20%;">
+
+        <div style=" width: 20vw;position: relative; left: 70%; top: 50vh;">
+          <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
+            <circle cx=15 cy=15 r=5 style="fill: #c4c4c4;"></circle>
+          </svg>
+          <p
+            style="line-height: 40px;color: white; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
+            1932年</p>
+          <p style="line-height: 40px;color: white; letter-spacing: 1px;">
+            臺灣最初期的現代商業性流行臺語歌曲〈桃花泣血記〉，為同名電影宣傳曲，同名片〈桃花泣血記〉由阮玲玉主演在臺灣上映。
+
+          </p>
+        </div>
+      </div>
+
+      <!--   戒嚴黑   -->
+      <div style="height: 650vh;">
+        <img style="z-index: -1;position: sticky; top: 0px; height: 100vh; width: 100%;"
+          src="https://lh3.googleusercontent.com/hRsnmgEUsFhlUYa2SgHSKVk9kTnLLPk6nON2PsMSc-UVMmB-Qgk1t-B3WHhXJvbAo1umElV8l78J6MJXh1TD20Qq-4cN227NCMmIhrYK2T44vg1C4k6isbk_Owbdk35eyiNb__qneA=w2400"
+          alt="">
+        <!--   1940-1950 -->
+        <div
+          style="height: 150vh; background-image: url(https://lh3.googleusercontent.com/a-QIPAt1wx-CXdgMquPkjD1EA0Fp5EzUMbPMuCVsZ85TwGmiJmFC0oIaw7c8VDm71K3vgQlxGJG8QVBEx7JqwVI7fQA9sbkC91cJAhNUXV3dJ-cHkwZ6AooCA8jrSyFKhGK1ezeE1w=w2400); background-attachment: fixed; background-size: contain; background-repeat: no-repeat; background-position: -10% 50%;">
+
+          <div style=" width: 20vw;position: relative; left: 70%; top: 50vh;">
+            <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
+              <circle cx=15 cy=15 r=5 style="fill: #c4c4c4;"></circle>
+            </svg>
+            <p
+              style="line-height: 40px;color: white; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
+              1940-1950年</p>
+            <p style="line-height: 40px;color: white; letter-spacing: 1px;">
+              臺灣戰後轉型期，國民政府遷臺，臺語歌曲的黑暗時期。
+            </p>
+          </div>
+        </div>
+
+        <!--   1949 -->
+        <div
+          style="height: 150vh; background-image: url(https://lh3.googleusercontent.com/OcEhYkgvOaDdNvU5Z3AhcOXeMjo8RuAZhpEQ22oUCV8ddVL9VegOIfcjOrD2tb5A6vYVPHdoQTcr9K55GagH2Q1du-PCINqaFTyYw_Mw4R46ycJXBTbglAFxl1_1oL9vm7asFK59ng=w2400); background-attachment: fixed; background-size: 60%; background-repeat: no-repeat; background-position: 0% 50%;">
+          <div style=" width: 20vw;position: relative; left: 70%; top: 50vh;">
+            <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
+              <circle cx=15 cy=15 r=5 style="fill: #c4c4c4;"></circle>
+            </svg>
+            <p
+              style="line-height: 40px;color: white; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
+              1949年</p>
+            <p style="line-height: 40px;color: white; letter-spacing: 1px;">
+              實施戒嚴，同時也包含對音樂的審查，使得當時許多臺語歌曲成為「禁歌」，創作〈黃昏的故鄉〉、〈媽媽請你也保重〉的文夏，為臺語歌曲中被禁歌曲最多的創作人。
+
+            </p>
+          </div>
+        </div>
+
+        <!--   1976 -->
+        <div
+          style="height: 150vh; background-image: url(https://lh3.googleusercontent.com/KiScDnVXM7MdyI11zf0Aiys4-x8ZD7ebUuD4p8aINNA-MpYk3RMwkFJE8Wzp8LlnsZaWfHzdEygZ3SiSpT29qQfkOo8oAsV1jyMvizV6xmjLJhz1lrZhulCRhGTbGwm_4YYZZxWjMQ=w2400); background-attachment: fixed; background-size: 55%; background-repeat: no-repeat; background-position: 0% 50%;">
+          <div style=" width: 20vw;position: relative; left: 70%; top: 50vh;">
+            <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
+              <circle cx=15 cy=15 r=5 style="fill: #c4c4c4;"></circle>
+            </svg>
+            <p
+              style="line-height: 40px;color: white; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
+              1976年</p>
+            <p style="line-height: 40px;color: white; letter-spacing: 1px;">
+              行政院通令三台，要求綜藝節目中演唱歌曲應有三分之一為愛國歌曲、藝術歌曲與徵選歌曲。《廣電法》中規定：「方言歌曲，電視台和廣播電台宜少播放。」
+
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <!--   1987 -->
+      <div style="height: 150vh; 
+                    background-image: url(https://lh3.googleusercontent.com/xO_ogJENAV6xxlGfe3oesOYdzmbZDW28ZsaKzeW8Er1s6FOYn4eXR2CMFT-puZUMlk0un3s0QZkwHPCZexcag7pb-g0jdZnPJuj5wRNFVjZkInmbIKpm17Ij7ksEjt6v4ic3cWzVQw=w2400),
+                                      url(https://lh3.googleusercontent.com/wy5YgHxCov9cQkbaOFXB-IjunwjEQ0pjI21xixTA1pgACHiC44ohsVPsBv5ZqtMgWVKm75Dl2FazGrzvinSIIIs6mtwF5XZnsBRDnnpvtE6WQYZUan_fDE65__PluAqPlQ06pEeHIg=w2400); 
+                    background-attachment: fixed; 
+                    background-size: 25%,
+                                     40%; 
+                    background-repeat: no-repeat; 
+                    background-position: 55% 75%,
+                                         0% 20%;">
+        <div style=" width: 20vw;position: relative; left: 70%; top: 50vh;">
+          <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
+            <circle cx=15 cy=15 r=5 style="fill: #c4c4c4;"></circle>
+          </svg>
+          <p
+            style="line-height: 40px;color: white; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
+            1987年</p>
+          <p style="line-height: 40px;color: white; letter-spacing: 1px;">
+            正式宣佈解嚴，臺語歌復甦。
+
+          </p>
+        </div>
+      </div>
+
+      <!--   1989 -->
+      <div
+        style="height: 150vh; 
+                    background-image: url(https://lh3.googleusercontent.com/qThha0-sJy4CTxKZvppn3piGgSvv7QwmBiTdMWIZKBnQNcPE_MUxE7vZZcO4XEqzBjMjuAQr5B1kWk85XOrD3vCfPP-U66QFj7HT4t9H5wF6pPjU5hW6371K_SNZGugYup33PeMi3A=w2400); 
+                    background-attachment: fixed; background-size: 35%; background-repeat: no-repeat; background-position: 20% 50%;">
+        <div style=" width: 20vw;position: relative; left: 70%; top: 50vh;">
+          <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
+            <circle cx=15 cy=15 r=5 style="fill: #444;"></circle>
+          </svg>
+          <p
+            style="line-height: 40px;color: #343434; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
+            1989年</p>
+          <p style="line-height: 40px;color: #343434; letter-spacing: 1px;">
+            「黑名單工作室」製作第一張音樂專輯《抓狂歌》。近乎全臺語創作、挑戰傳統，以搖滾、饒舌的音樂方式呈現，在臺灣流行樂壇前所未見。
+          </p>
+        </div>
+      </div>
+
+      <!--   1990 -->
+      <div
+        style="height: 150vh; 
+                    background-image: url(https://lh3.googleusercontent.com/0LaW12u5h29gKwXfQUdQgjJgHopUii6IrC9kN7S68tuCE8zHfHJWSUsErS_ds5tU7Y13HEVZqmH_syjJHT65TxxP85duqaKZE-AfSSO9AJs3NTSgk9AkDh6SvuWL5YsudyY0pDk9Wg=w2400); 
+                    background-attachment: fixed; background-size: 35%; background-repeat: no-repeat; background-position: 20% 50%;">
+        <div style=" width: 20vw;position: relative; left: 70%; top: 50vh;">
+          <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
+            <circle cx=15 cy=15 r=5 style="fill: #444;"></circle>
+          </svg>
+          <p
+            style="line-height: 40px;color: #343434; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
+            1990年</p>
+          <p style="line-height: 40px;color: #343434; letter-spacing: 1px;">
+            歌曲審查制度廢除，本土意識抬頭。《向前走》專輯出版，改變臺語歌曲形象，掀起另一波新臺語歌的風潮。
+          </p>
+        </div>
+      </div>
+
+      <!--   1990-2000 -->
+      <div
+        style="height: 150vh; 
+                    background-image: url(https://lh3.googleusercontent.com/vDhV06ySV6QuafB-9NisT9WaDH-1JZup1wgTqtTKeZqZK9e_sZGFYZsyYGpPA2noAOw3_H89e37CxbjdMq6PfguuL_v2LJB9-SMHUlf6_LabPkdPfbomGk6qVYnEPziX4hNKftNLiw=w2400),
+                                      url(https://lh3.googleusercontent.com/wHbdqjuuxqkHiyZ0ifPOA691_IVIeyJHuzM4WmvSrWRX6QIMkGcY4fl0t4QIOXy8_Dc3k5lbN1xr1ktaEeb7oYWA2uA5SI-Q9xLvPS5CBT4YG2p_jJUyK90NYzsy_J9qZkP9cVnBBA=w2400); 
+                    background-attachment: fixed; background-size: 35%; background-repeat: no-repeat; background-position: 20% 50%;">
+        <div style=" width: 20vw;position: relative; left: 70%; top: 50vh;">
+          <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
+            <circle cx=15 cy=15 r=5 style="fill: #444;"></circle>
+          </svg>
+          <p
+            style="line-height: 40px;color: #343434; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
+            1990-2000</p>
+          <p style="line-height: 40px;color: #343434; letter-spacing: 1px;">
+            臺語歌曲走向多元化，林強、陳明章、朱約信、蕭福德、陳昇、新寶島康樂隊及謝金燕的電子舞曲和伍佰的搖滾曲風各具代表性。
+          </p>
+        </div>
+      </div>
+
+      <!--   2000-2010 -->
+      <div
+        style="height: 150vh; 
+                    background-image: url(https://lh3.googleusercontent.com/HJ1N1s7P9eP-IqAhOqBtTMVXJQitoVd72vmenFdrbaWNnOnmHjOhwzB8rHSiHC9u_VFpK9--ZqlkCwNcUGjg5a5AAXbaGfEyLcb-vjf4znsZnDUddhFcGymLwsJc7ZxjC_T4_4WC0w=w2400); 
+                    background-attachment: fixed; background-size: contain; background-repeat: no-repeat; background-position: -20% 50%;">
+        <div style=" width: 20vw;position: relative; left: 70%; top: 50vh;">
+          <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
+            <circle cx=15 cy=15 r=5 style="fill: #444;"></circle>
+          </svg>
+          <p
+            style="line-height: 40px;color: #343434; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
+            2000-2010年</p>
+          <p style="line-height: 40px;color: #343434; letter-spacing: 1px;">
+            臺語歌曲多面向發展，許多華語歌手的專輯中，也將臺語作為一種語言創作，同時收錄華語及臺語歌曲。
+          </p>
+        </div>
+      </div>
+
+      <!--   2010 -->
+      <div
+        style="height: 150vh; 
+                    background-image: url(https://lh3.googleusercontent.com/UqXVOIim-FbHpbl7suDuvP6AOyMHXWFhCnO_YozNgDs4RcVVOF-AnbYHiL34wJnUm65ErBmZSNDo50T-IFuvcby1G-rhFva12bVtTk98kbgTVmW2y35BT2lLzASIGuLDzvB-UpWoeA=w2400); 
+                    background-attachment: fixed; background-size: contain; background-repeat: no-repeat; background-position: 0% 50%;">
+        <div style=" width: 20vw;position: relative; left: 70%; top: 50vh;">
+          <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
+            <circle cx=15 cy=15 r=5 style="fill: #444;"></circle>
+          </svg>
+          <p
+            style="line-height: 40px;color: #343434; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
+            2010年至今</p>
+          <p style="line-height: 40px;color: #343434; letter-spacing: 1px;">
+            數位音樂興起，串流音樂成為主流。獨立音樂也逐漸成為臺語流行音樂的重要組成，如閃靈樂團、滅火器樂團、濁水溪公社、董事長樂團、茄子蛋、隨性樂團Random、美秀集團、拍謝少年、淺堤等。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 陳峙維 -->
+  <div class="section" style="height: 100vh; overflow:hidden; position: relative; background-image: url(chen-01.JPG);">
+    <div style="position: absolute; height: 100vh; width: 100vw; background-color: rgba(0,0,0,0.5);"></div>
+    <p style="position: absolute; font-weight:700; font-size: 24px; color: white; 
+    top: 50%; transform: translateY(-50%); left: 10%; width: 50vw;">
+      「對現在許多臺語歌創作者來說，臺語並非是生活中必要的一部份，
+      但他或許將創作臺語歌曲當成一種鄉愁或身分認同的展現。」<br><br>
+
+      ——臺大藝文中心執行長陳峙維。
+    </p>
+  </div>
+
+  <div style="height: 300vh; background-color: rgba(255, 255, 255, 0.897); position: relative;">
+    <div style="height: 100vh; position: sticky; top:0;">
+      <img style="width: 25%; position: absolute; left: 10%; bottom: -5%;" src="chen-02.png" alt="">
       
-      <div style="height: 100vh; background-color: #646464; position: relative;">
-        <img style="width: 60%; float: right; position: relative; top: 5%;"
-             src="https://lh3.googleusercontent.com/jnsjFIl2xgxQNNzVbxzkdbiNTNDnFcD6u18E1mYKAFjg4b8FQmsveo0RYmrvlBxuPIfJz2jRyFfft9saZLH9MOXc9q50SAEnhvMwQ3mOdC9OfqYkav2T2Bz6SbU696saHfP_w8LGGA=w2400" alt="">
-        <h1 style="position: relative; top: 10%; left: 10%; font-size: 72px; font-weight: 900; font-family: 'Noto Serif TC', serif;">流氓阿德</h1>
-      <!--   <img style="width: 10%; position: relative; left: 20%; top: 10%; "src="https://lh3.googleusercontent.com/P3LyCkn6pvfuDWPR1iOMOekCeKwjY3QVqlduBpddCkS0xhVT7tJ2y99oNV9xQt9T6HIJfHZHdMhvHXRuEriUrDDBmdck_LLtTo1Am4-xQ2ktvlJrEPFvicRfVXam_BB-RGO8Zgi_yQ=w2400" alt=""> -->
-        <p style="position: absolute; left: 5%; bottom: 5%;
-                  color: #EAE5D1; font-size: 30px; font-family: 'Noto Serif TC', serif; font-weight: 700;">
-          「使用臺語創作，
+    </div>
+    <p style="position: absolute; font-weight:500; font-size: 18px; color: black; 
+    top: 10%; left: 40%; width: 50vw;">拋開感性的情緒，現代的臺語歌創作者，特別是指 2010 年後的新生代創作者，需要面臨的挑戰其實不少。<br><br>
+      首先，臺語歌創作者必須面臨的，是一個極度分眾化的年代。各式各樣的媒體雨後春筍般誕生，除了傳統的電視、廣播、唱片外，聽眾們更廣泛使用的，可能是網路影音或串流平臺。<br><br>
+      這樣的觀賞及消費型態其實是正反並陳，隨著獲取歌曲聆聽經驗變得容易，大數據資料分析下的影音平臺推播功能，不同類型的臺語歌曲更有機會被聽眾發現和聆聽，<br><br>
+      然而也由於聆聽歌曲的管道比比皆是，唱片成了收藏品，創作者們能夠賺取利潤的管道，逐漸轉型成以演唱會、周邊商品販售為主。但這些必須建立在擁有「市場」之前，而現實情況中，臺語歌的市場較為小眾，是不爭的事實。<br><br>
+      除此之外，創作本身以外繁雜的事項，很多時候僅靠創作者本身獨立負擔是非常吃力的，因此在知名度大躁之前，許多創作者可能會需要以兼職的方式進行創作，畢竟先活下去依舊是最重要的。
+      </p>
+  
+  
+  
+  
+  </div>
+
+
+  <!-- 阿德 -->
+  <div id="adei" style="height: 100vh; background-color: #646464; position: relative;">
+    <img style="width: 60%; float: right; position: relative; top: 50%; transform:translateY(-50%);"
+      src="https://lh3.googleusercontent.com/lAWwnfh5VeMvDFcQe_fLpywg0Hj8GmC4mCqX7qPvBgxfeHoiJQPdEXmBvJIkIwOO6xmZUWKKGdi0zdK7Ddj-S2aBmufxbIHBvaUIVXIghRzKwk7Ugx4Ez_cAiSrRLqjlK-W-qpzsRg=w2400"
+      alt="">
+    <h1
+      style="position: relative; top: 10%; left: 10%; font-size: 72px; font-family: 'Noto Serif TC', serif; font-weight: 900;">
+      流氓阿德</h1>
+    <!--   <img style="width: 10%; position: relative; left: 20%; top: 10%; "src="https://lh3.googleusercontent.com/P3LyCkn6pvfuDWPR1iOMOekCeKwjY3QVqlduBpddCkS0xhVT7tJ2y99oNV9xQt9T6HIJfHZHdMhvHXRuEriUrDDBmdck_LLtTo1Am4-xQ2ktvlJrEPFvicRfVXam_BB-RGO8Zgi_yQ=w2400" alt=""> -->
+    <p style="position: absolute; left: 5%; top: 45%;
+            color: #EAE5D1; font-size: 30px; font-family: 'Noto Serif TC', serif; font-weight: 700; width: 40%;">
+      「使用臺語創作，
       <br>我可以展現比華語多出幾百幾千倍的情感。」</p>
-        <p class="btn" style="position: absolute; left: 10%; top: 50%;">完整專訪</p>
-        
-      </div>
-      
-      <div style="height: 100vh; background-color: #343434; position: relative;">
-        <img style="width: 60%; float: left; position: relative; top: 5%;"
-             src="https://lh3.googleusercontent.com/nnRpCjjNrA-9NGRR1oJ_v81e25wjbBuWDt93gNcD9GcpbQAyLLoL2VMvGXuRMoqu4QbFhXy8_HyxQZecvn6yk9V6torKd6P2DyJB1lSh6W4XhEsPoO-jjo6hI_SHIx-SNXy76AOYAg=w2400" alt="">
-        <h1 style="position: relative; padding: 10px; top: 10%; font-size: 72px; font-weight: 900; font-family: 'Noto Serif TC', serif; color: #D6D6D6">許富凱</h1>
-      <!--   <img style="width: 10%; position: relative; left: 5%; "src="https://lh3.googleusercontent.com/P3LyCkn6pvfuDWPR1iOMOekCeKwjY3QVqlduBpddCkS0xhVT7tJ2y99oNV9xQt9T6HIJfHZHdMhvHXRuEriUrDDBmdck_LLtTo1Am4-xQ2ktvlJrEPFvicRfVXam_BB-RGO8Zgi_yQ=w2400" alt=""> -->
-        <p style="position: absolute; text-align: right; right: 5%; bottom: 10%;
-                  color: #EAE5D1; font-size: 30px; font-family: 'Noto Serif TC', serif; font-weight: 700;">「沒有舊的，哪會有新的。」</p>
-        <br>
-        <p class="btn" style="position: absolute; top: 50%; right: 10%;">完整專訪</p>
-        
-      </div>  
-      
-      <div style="height: 100vh; background-color: #646464; position: relative;">
-        <img style="width: 60%; float: right; position: relative; top: 5%;"
-             src="https://lh3.googleusercontent.com/9nF7iMAVR-VIRQ5fUmQhKMeBI2hhhApQF3vx6bypYASc1aKEZRk9cYOZoGIZl1DhdvDw_yn66ddSpQCqFjP0H7Ac-M7T8FBsD20TtVElj0tUBKQxNA7VJkQIQU1BpCHXwL7JtbZQgA=w2400" alt="">
-        <h1 style="position: relative; padding: 10px; left: 10%; top: 10%;
-                   font-size: 72px; font-family: 'Noto Serif TC', serif; font-weight: 900;">拍謝少年</h1>
-      <!--   <img style="width: 10%; position: relative; left: 20%; "src="https://lh3.googleusercontent.com/P3LyCkn6pvfuDWPR1iOMOekCeKwjY3QVqlduBpddCkS0xhVT7tJ2y99oNV9xQt9T6HIJfHZHdMhvHXRuEriUrDDBmdck_LLtTo1Am4-xQ2ktvlJrEPFvicRfVXam_BB-RGO8Zgi_yQ=w2400" alt=""> -->
-        <p style="position: absolute; left: 5%; bottom: 10%;
-                  color: #EAE5D1; font-size: 30px; font-family: 'Noto Serif TC', serif; font-weight: 700;">「臺語是跟我們最親近的語言。」</p>
-        <br>
-        <a href="paisei.html">
-          <p class="btn" style="position: absolute; left: 10%; top: 50%;">完整專訪</p>
-        </a>
-        
-      </div>
-    <!-- Optional JavaScript; choose one of the two! -->
+    <a href="adei.html">
+      <p class="btn" style="position: absolute; left: 5%; bottom: 5%;">完整專訪</p>
+    </a>
+    
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+  </div>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
+  <!-- 富凱 -->
+  <div id="fukai" style="height: 100vh; background-color: #343434; position: relative;">
+    <img style="width: 60%; float: left; position: relative; top: 50%; transform:translateY(-50%);"
+      src="https://lh3.googleusercontent.com/XG2C7OXTm7OunkcyDWUzUQQbh20NoOVHnGag-2d_wK_3snpBPcnYBifafI4Xm6v4_Kn33MzUuDVIynU3ZFYx6BWiIxleeeBdoYrG82pAQXKV563_U6X5B1XjoMuy7CFczh3Kve2Cig=w2400"
+      alt="">
+    <h1
+      style="position: relative; padding: 10px; top: 10%; left: 3%; font-size: 72px; font-family: 'Noto Serif TC', serif; color: #D6D6D6; font-weight: 900;">
+      許富凱</h1>
+    <!--   <img style="width: 10%; position: relative; left: 5%; "src="https://lh3.googleusercontent.com/P3LyCkn6pvfuDWPR1iOMOekCeKwjY3QVqlduBpddCkS0xhVT7tJ2y99oNV9xQt9T6HIJfHZHdMhvHXRuEriUrDDBmdck_LLtTo1Am4-xQ2ktvlJrEPFvicRfVXam_BB-RGO8Zgi_yQ=w2400" alt=""> -->
+    <p style="position: absolute; text-align: right; right: 5%; top: 45%;
+            color: #EAE5D1; font-size: 30px; font-family: 'Noto Serif TC', serif; font-weight: 700; width: 40%;">
+      「沒有舊的，哪會有新的。」</p>
+    <br>
+    <a href="fukai.html">
+      <p class="btn" style="position: absolute; bottom: 5%; right: 5%;">完整專訪</p>
+    </a>
+    
+
+  </div>
+
+  <!-- 拍謝 -->
+  <div id="paisei" style="height: 100vh; background-color: #646464; position: relative;">
+    <img style="width: 60%; float: right; position: relative; top: 50%; transform:translateY(-50%);"
+      src="https://lh3.googleusercontent.com/OIXJcNbmWSYmggC-7UKR87ybjdlTCDtcODRVdbe6QkF7qNPfZJNWwluz8Va5JEoJa6DlpWKoxKbqws2ZabuXUaS9NX5UqksQX9UIG7MTGUb7hkj_KgbnHom82nHtEnvYmUpV-fsmVQ=w2400"
+      alt="">
+    <h1 style="position: relative; padding: 10px; left: 10%; top: 10%;
+             font-size: 72px; font-family: 'Noto Serif TC', serif; font-weight: 900;">拍謝少年</h1>
+    <!--   <img style="width: 10%; position: relative; left: 20%; "src="https://lh3.googleusercontent.com/P3LyCkn6pvfuDWPR1iOMOekCeKwjY3QVqlduBpddCkS0xhVT7tJ2y99oNV9xQt9T6HIJfHZHdMhvHXRuEriUrDDBmdck_LLtTo1Am4-xQ2ktvlJrEPFvicRfVXam_BB-RGO8Zgi_yQ=w2400" alt=""> -->
+    <p style="position: absolute; left: 5%; top: 45%;
+            color: #EAE5D1; font-size: 30px; font-family: 'Noto Serif TC', serif; font-weight: 700; width: 40%;">
+      「臺語是跟我們最親近的語言。」</p>
+    <br>
+    <a href="paisei.html">
+      <p class="btn" style="position: absolute; left: 5%; bottom: 5%;">完整專訪</p>
+    </a>
+
+  </div>
 
 
-    <script>
-      $(function() {
-            var winh = $(window).height();
-            $(window).scroll(function() {
-                var scrolled = $(window).scrollTop();
-                console.log(scrolled);
-              // 開頭漫畫
-                $(".slideanimate").each(function() {
-                    if (scrolled > $(this).data("pos")) {
-                        $(this).addClass("animated slide " + $(this).data("direction"));
-                    }
-                    if (scrolled == 0) {
-                        $(this).removeClass("animated slide " + $(this).data("direction"));
-                        $(this).css("-webkit-filter","sepia(0)");
-                    }
-                    if (scrolled > $("#title").data("pos")) {
-                        $(this).css("-webkit-filter","sepia(1)");
-                    }
-                });
-            });
+  <div style="height: 100vh; background-color: #555;position: relative;">
+    <h1 class="h1" style="position: absolute; top: 30%; transform: translateY(-50%); 
+    font-family: 'Noto Serif TC', serif; color: white; font-weight: 900;
+    left: 50%; transform: translateX(-50%); text-align: center; width: 100%;">若臺語消失的那天來臨,<br>
+
+      某部分的臺灣也將死去。</p>
+  </div>
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+  </script>
+
+
+  <script>
+    $(function () {
+      var scrollable = $('#year').height() - $(window).height();
+      var yearsec = $('#year').offset().top;
+      var winh = $(window).height();
+      $(window).scroll(function () {
+        var scrolled = $(window).scrollTop();
+
+
+        // 年代卷軸
+        $(".opa").each(function () {
+
+          $(this).css("opacity", $(this).data("pos") - (2 * (scrolled - yearsec)) / scrollable);
+          // 設定data-pos變數，讓第一層的數字先減完變透明，第二層在第一層消失時剛好透明度為1
+          console.log($(this).data("pos") - (2 * (scrolled - yearsec)) / scrollable);
         });
-    </script>
-  </body>
+        // 開頭漫畫
+        $(".slideanimate").each(function () {
+          if (scrolled > $(this).data("pos")) {
+            $(this).addClass("animated slide " + $(this).data("direction"));
+          }
+          if (scrolled < $(this).data("pos")) {
+            $(this).removeClass("animated slide " + $(this).data("direction"));
+
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
