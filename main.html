@@ -108,9 +108,12 @@
 
   </div>
 
-  <div style="height: 100vh; overflow:hidden; position: relative;">
+  <div id="audio-01-start" style="height: 100vh; overflow:hidden; position: relative;">
     <video style="height: 120vh; position: relative; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);"
       autoplay muted loop src="turning.mp4"></video>
+    <audio id="year_audio" src="year.mp3" autoplay="autoplay" loop="loop"></audio>
+    <p style="position: absolute; font-weight:700; font-size: 12px; color: white; 
+    top: 10%; transform: translateY(-50%); left: 10%; width: 50vw;">背景音樂：桃花泣血記<br>建議開啟聲音聆聽</p>
     <p style="position: absolute; font-weight:700; font-size: 18px; color: white; 
     top: 50%; transform: translateY(-50%); left: 10%; width: 50vw;">
       臺語，曾經是臺灣最多人使用的語言。<br>
@@ -158,7 +161,7 @@
 
 
       <!--   1932 -->
-      <div style="height: 150vh; 
+      <div  style="height: 150vh; 
                     background-image: url(https://lh3.googleusercontent.com/Mrv-FZJBUPdc_CAMn0kB2FHKWjUJPTZmA4MvYFQ_Pho7q9a9ftK1Y3Q_kFBkWGpZrw0lPNCdQhU5QKqLkOy2-aHZouxvrA2cROlvFcRZSLeeJeoJEVf7CQ9fOZ8yXoEpfL1k5pFn3g=w2400),
                                       url(https://lh3.googleusercontent.com/my1nOY0TJre12QaGNpBKTBdEWYOggLo1wyuAFl3HrfMYJYxaLg_FM9-M4rKxfrJPzdLBcA8eJ9d8clviev0YCMJ-odQgihzHVYeu8i_g2fRWdMPVPRcwWCaIr1aeMEPWDufqcP-9SQ=w2400); 
                     
@@ -247,7 +250,7 @@
 
 
       <!--   1987 -->
-      <div style="height: 150vh; 
+      <div id="audio-01-restart" style="height: 150vh; 
                     background-image: url(https://lh3.googleusercontent.com/xO_ogJENAV6xxlGfe3oesOYdzmbZDW28ZsaKzeW8Er1s6FOYn4eXR2CMFT-puZUMlk0un3s0QZkwHPCZexcag7pb-g0jdZnPJuj5wRNFVjZkInmbIKpm17Ij7ksEjt6v4ic3cWzVQw=w2400),
                                       url(https://lh3.googleusercontent.com/wy5YgHxCov9cQkbaOFXB-IjunwjEQ0pjI21xixTA1pgACHiC44ohsVPsBv5ZqtMgWVKm75Dl2FazGrzvinSIIIs6mtwF5XZnsBRDnnpvtE6WQYZUan_fDE65__PluAqPlQ06pEeHIg=w2400); 
                     background-attachment: fixed; 
@@ -365,7 +368,7 @@
 
 
   <!-- 陳峙維 -->
-  <div class="section" style="height: 100vh; overflow:hidden; position: relative; background-image: url(chen-01.JPG);">
+  <div id="audio-01-end" class="section" style="height: 100vh; overflow:hidden; position: relative; background-image: url(chen-01.JPG);">
     <div style="position: absolute; height: 100vh; width: 100vw; background-color: rgba(0,0,0,0.5);"></div>
     <p style="position: absolute; font-weight:700; font-size: 24px; color: white; 
     top: 50%; transform: translateY(-50%); left: 10%; width: 50vw;">
@@ -393,12 +396,15 @@
       更不用說臺語還牽扯到腔調的問題，在華語文文字和發音分開發展的歷史脈絡之下，臺語創作者需要投注更多心力去試圖找到能更親近群眾的解方。<br><br>
       訪談尾聲，陳峙維感嘆：「臺語歌市場這麼小，創作者需要去思考如何寫出臺味、做出代表性、找到平臺，否則不是在喊口號，就真的是會成為『志業』，很難存活。」
     </p>
-
   </div>
-
-  <div style="height: 100vh; background-image: url(sing.jpeg); background-size: cover; background-position: center;">
-    <div
-      style="overflow: hidden;position: relative; height: 80vh; width: 50vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
+  
+  <div id="audio-02-start" style="height: 100vh; background-image: url(sing.jpeg); background-size: cover; background-position: center;">
+    
+    <div 
+      style="position: relative; height: 80vh; width: 50vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
+      <audio id="paisei_audio" src="paisei_song.mp3" autoplay="autoplay" loop="loop"></audio>
+      <p style="position: absolute; font-weight:700; font-size: 12px; color: white; 
+    top: 10%; transform: translateY(-50%); left: -30%; width: 50vw;">背景音樂：拍謝少年<br>建議開啟聲音聆聽</p>
       <h1 style="font-size: 36px; color: white; text-align: center; font-weight: 700;">共咱本土的語言唱出來</h1>
       <p style="font-size: 18px; color: white; text-align: center; font-weight: 500;">kā lán pún-thóo--ê gí-giân
         tshiùnn tshut-lâi</p>
@@ -534,6 +540,29 @@
       var winh = $(window).height();
       $(window).scroll(function () {
         var scrolled = $(window).scrollTop();
+        var music = document.getElementById("year_audio");
+        var music2 = document.getElementById("paisei_audio");
+
+        if (scrolled >= $("#audio-01-start").offset().top ){
+          music.play();
+        }
+        if (scrolled + winh > $("#audio-01-end").offset().top ){
+          music.pause();
+        }
+        if (scrolled < $("#audio-01-start").offset().top){
+          music.pause();
+        }
+
+        if (scrolled > $("#audio-02-start").offset().top ){
+          music2.play();
+        }
+
+        if (scrolled <= $("#audio-02-start").offset().top ){
+          music2.pause();
+        }
+
+
+        
 
 
         // 年代卷軸
