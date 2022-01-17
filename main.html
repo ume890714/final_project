@@ -23,15 +23,20 @@
 
   <div style="height: 300vh; position: relative;">
     <div style="position: sticky; top: 0%; height: 100vh; width: 100vw; background: #000;">
-      <video autoplay muted loop style="position: sticky; left: 0; top: 0; width: 100vw; height: 100vh;"
+      <video autoplay muted loop style="position: absolute; left: 0; top: 0; width: 100vw; height: 100vh;"
         src="heading.mp4"></video>
-      <h1 style="position: absolute; top: 15%; transform: translateY(-50%); font-family: 'Noto Serif TC', serif; color: white; font-weight: 900; font-size: 60px;
-        left: 50%; transform: translateX(-50%); text-align: left; ">
-        在最好也最壞的年代，<br>
-        唱出臺語的未來
-      </h1>
-      <p style="position: relative; top: 0%; transform: translateY(-50%); font-family: 'Noto Serif TC', serif; color: #c4c4c4; font-weight: 500; font-size: 14px;
-      left: 35%; transform: translateX(-50%); text-align: left; ">最後更新日期於2022年1月11日</p>
+      <div id="heading_title"
+        style="max-width: 90vw; display: inline-block;position: relative;  top: 15%; transform: translateY(-50%); left: 50%; transform: translateX(-50%);">
+        <h1 id="heading_h1" style=" font-family: 'Noto Serif TC', serif; color: white; font-weight: 900; 
+         text-align: left; ">
+          在最好也最壞的年代，<br>
+          唱出臺語的未來
+        </h1>
+        <p style="font-family: 'Noto Serif TC', serif; color: #c4c4c4; font-weight: 500; font-size: 14px;
+       text-align: left; ">最後更新日期於2022年1月11日</p>
+      </div>
+
+
 
       <p class="slideanimate h1" data-pos=100 data-direction="fadeInUp" style="position: absolute; top: 60%; transform: translateY(-50%); 
     font-family: 'Noto Serif TC', serif; color: white; font-weight: 500; font-size: 24px; width: 100%;">
@@ -43,18 +48,17 @@
 
   <!-- 前言 -->
 
-  <div style="height: 100vh; background-color: #555;">
-    <div
-      style="position: relative; height: 60vh; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
-      <img style="width: 30vw; position: relative; float: right;" src="data-01.png" alt="">
+  <div style="height: 100vh; background-color: #666;">
+    <div class="preface-box">
+      <img class="preface-img" style="float:right;" src="data-01.png" alt="">
       <p
-        style="position: relative;width: 50vw; font-weight:700; font-size: 18px; color: white; top: 30%; transform: translateY(-50%);">
+        style="position: relative; font-weight:700; font-size: 18px; color: white; top: 30%; transform: translateY(-50%);">
         臺語在聯合國教科文組織定義的瀕危語言六等級中，<br>
         被列為第三級──「重大危險」，<br>
         也就是祖父母會說,但不常對小孩使用，<br>
         存在傳承的危機。</p>
       <p
-        style="position: relative;width: 50vw; font-weight: 500; font-size: 16px; color: white; top: 40%; transform: translateY(-50%);">
+        style="position: relative; font-weight: 500; font-size: 16px; color: white; top: 40%; transform: translateY(-50%);">
         （註：「臺語」一詞如何使用仍是爭議，<br>
         本篇文章中所稱之「臺語」乃指「台灣閩南語」，<br>
         使用此一詞乃因目前社會大眾依舊普遍以「臺語」，<br>
@@ -65,22 +69,21 @@
   </div>
 
   <div style="height: 100vh; background-color: #555;">
-    <div
-      style="position: relative; height: 60vh; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
-
-      <p style="float: right;position: relative; font-weight: 700; font-size: 18px; color: white; 
-      top: 50%; transform: translateY(-50%);">
+    <div class="preface-box">
+      <img class="preface-img" style="float: left;" src="data-02.png" alt="">
+      <p style="position: relative; font-weight: 700; font-size: 18px; color: white; left: 2%; top: 50%; transform: translateY(-50%);
+      ">
         2013年「家中最常說的語言」調查研究，<br>
         年輕人(20-28歲)說臺語的比例僅剩22.3%，<br>
         更不用說是2022年的現在，<br>
         情況更為嚴峻。</p>
-      <img style="width: 30vw; position: relative; top: 50%; transform: translateY(-50%);" src="data-02.png" alt="">
+
 
     </div>
 
   </div>
 
-  <div style="height: 400vh; background-color: #555;">
+  <div style="height: 400vh; background-color: #444;">
     <div style="position: sticky; width: 100vw; height: 100vh; top: 0%;">
 
       <div
@@ -89,20 +92,18 @@
           在當前以華語為主要語言的臺灣社會，許多長輩為了和孩子溝通、拉近距離，會捨棄講臺語，選擇使用陌生、
           不流利的華語。<br>「年輕人會聽不會講臺語」、「阿媽跟鄰居說臺語，轉頭跟孫子說華語」是普遍的現象。</p>
 
-        <img class="slideanimate" data-pos=2000 data-direction="fadeInUp" style="width: 60%;  position: absolute; left: 20%; bottom:0px; transform:translateY(-50%) translateX(-50%);
-        background-color: #444;" src="comic-01.PNG" alt="">
-        <img class="slideanimate" data-pos=3500 data-direction="fadeInUp" style="width: 60%;  position: absolute; left: 20%; bottom:0px; transform:translateY(-50%) translateX(-50%);
-        background-color: #444;" src="comic-02.PNG" alt="">
-        <img class="slideanimate" data-pos=4000 data-direction="fadeInUp" style="width: 60%;  position: absolute; left: 20%; bottom:0px; transform:translateY(-50%) translateX(-50%);
-        background-color: #444;" src="comic-03.PNG" alt="">
+        <img class="slideanimate preface-comic" data-pos=2000 data-direction="fadeInUp" src="comic-01.PNG" alt="">
+        <img class="slideanimate preface-comic" data-pos=3500 data-direction="fadeInUp" src="comic-02.PNG" alt="">
+        <img class="slideanimate preface-comic" data-pos=4000 data-direction="fadeInUp" src="comic-03.PNG" alt="">
+
+
       </div>
     </div>
   </div>
 
 
   <div style="height: 40vh; background-color: #333;">
-    <div
-      style="position: relative; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
+    <div style="position: relative; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
       <p style=" font-weight:700; font-size: 18px; color: white; 
         ">
         過去政策力推「國語」，臺語逐漸凋零，預計再過30〜40年，若現在的狀況持續，臺語將會消失。</p>
@@ -110,11 +111,12 @@
 
   </div>
 
-  <div style="height: 50vh; background-color: rgb(197, 197, 197);">
-    <div style="position: relative; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);"> 
-      <p style="color: black; text-align: center;">背景音樂：桃花泣血記<br>建議開啟聲音聆聽</p>
+  <div style="height: 20vh; background-color: rgb(221, 221, 221);">
+    <div style="position: relative; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
+      <p style="color: black; text-align: center;">背景音樂：純純－〈桃花泣血記〉<br>建議開啟聲音聆聽</p>
       <audio id="year_audio" src="year.mp3" autoplay="" loop="loop"></audio>
-      <div id="audio_btn" class="audio-pause" style="width: 70px; height: 70px; position: relative; left: 50%; transform: translateX(-50%);"></div>
+      <div id="audio_btn" class="audio-pause"
+        style="width: 30px; height: 30px; position: relative; left: 50%; transform: translateX(-50%);"></div>
 
     </div>
 
@@ -123,8 +125,8 @@
   <div id="audio-01-start" style="height: 100vh; overflow:hidden; position: relative;">
     <video style="height: 120vh; position: relative; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);"
       autoplay muted loop src="turning.mp4"></video>
-    
-  
+
+
     <p style="position: absolute; font-weight:700; font-size: 18px; color: white; 
     top: 50%; transform: translateY(-50%); left: 10%; width: 50vw;">
       臺語，曾經是臺灣最多人使用的語言。<br>
@@ -163,7 +165,7 @@
           <p
             style="line-height: 40px;color: white; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
             1925-1937年</p>
-          <p style="line-height: 40px;color: white; letter-spacing: 1px;">
+          <p class="year-text">
             臺灣本土創作歌曲全盛時期，鄧雨賢作曲的〈望春風〉、〈四季紅〉、〈月夜愁〉等，都是至今人人依舊耳熟能詳的歌謠。
           </p>
         </div>
@@ -172,7 +174,8 @@
 
 
       <!--   1932 -->
-      <div style="height: 150vh; 
+      <div
+        style="height: 150vh; 
                     background-image: url(https://lh3.googleusercontent.com/Mrv-FZJBUPdc_CAMn0kB2FHKWjUJPTZmA4MvYFQ_Pho7q9a9ftK1Y3Q_kFBkWGpZrw0lPNCdQhU5QKqLkOy2-aHZouxvrA2cROlvFcRZSLeeJeoJEVf7CQ9fOZ8yXoEpfL1k5pFn3g=w2400); 
                     
                     background-attachment: fixed; background-size: 60%; background-repeat: no-repeat; background-position: 0% 50%;">
@@ -184,7 +187,7 @@
           <p
             style="line-height: 40px;color: white; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
             1932年</p>
-          <p style="line-height: 40px;color: white; letter-spacing: 1px;">
+          <p class="year-text">
             臺灣最初期的現代商業性流行臺語歌曲〈桃花泣血記〉，為同名電影宣傳曲，同名片〈桃花泣血記〉由阮玲玉主演在臺灣上映。
 
           </p>
@@ -207,7 +210,7 @@
             <p
               style="line-height: 40px;color: white; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
               1940-1950年</p>
-            <p style="line-height: 40px;color: white; letter-spacing: 1px;">
+            <p class="year-text">
               臺灣戰後轉型期，國民政府遷臺，臺語歌曲的黑暗時期。
             </p>
           </div>
@@ -223,7 +226,7 @@
             <p
               style="line-height: 40px;color: white; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
               1949年</p>
-            <p style="line-height: 40px;color: white; letter-spacing: 1px;">
+            <p class="year-text">
               實施戒嚴，同時也包含對音樂的審查，使得當時許多臺語歌曲成為「禁歌」，創作〈黃昏的故鄉〉、〈媽媽請你也保重〉的文夏，為臺語歌曲中被禁歌曲最多的創作人。
 
             </p>
@@ -240,7 +243,7 @@
             <p
               style="line-height: 40px;color: white; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
               1976年</p>
-            <p style="line-height: 40px;color: white; letter-spacing: 1px;">
+            <p class="year-text">
               行政院通令三台，要求綜藝節目中演唱歌曲應有三分之一為愛國歌曲、藝術歌曲與徵選歌曲。《廣電法》中規定：「方言歌曲，電視台和廣播電台宜少播放。」
 
             </p>
@@ -271,7 +274,7 @@
           <p
             style="line-height: 40px;color: white; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
             1987年</p>
-          <p style="line-height: 40px;color: white; letter-spacing: 1px;">
+          <p class="year-text">
             正式宣佈解嚴，臺語歌復甦。
 
           </p>
@@ -290,7 +293,7 @@
           <p
             style="line-height: 40px;color: #343434; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
             1989年</p>
-          <p style="line-height: 40px;color: #343434; letter-spacing: 1px;">
+          <p class="year-text" style="color: #343434;">
             「黑名單工作室」製作第一張音樂專輯《抓狂歌》。近乎全臺語創作、挑戰傳統，以搖滾、饒舌的音樂方式呈現，在臺灣流行樂壇前所未見。
           </p>
         </div>
@@ -308,7 +311,7 @@
           <p
             style="line-height: 40px;color: #343434; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
             1990年</p>
-          <p style="line-height: 40px;color: #343434; letter-spacing: 1px;">
+          <p class="year-text" style="color: #343434;">
             歌曲審查制度廢除，本土意識抬頭。《向前走》專輯出版，改變臺語歌曲形象，掀起另一波新臺語歌的風潮。
           </p>
         </div>
@@ -327,7 +330,7 @@
           <p
             style="line-height: 40px;color: #343434; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
             1990-2000年</p>
-          <p style="line-height: 40px;color: #343434; letter-spacing: 1px;">
+          <p class="year-text" style="color: #343434;">
             臺語歌曲走向多元化，林強、陳明章、朱約信、蕭福德、陳昇、新寶島康樂隊及謝金燕的電子舞曲和伍佰的搖滾曲風各具代表性。
           </p>
         </div>
@@ -345,7 +348,7 @@
           <p
             style="line-height: 40px;color: #343434; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
             2000-2010年</p>
-          <p style="line-height: 40px;color: #343434; letter-spacing: 1px;">
+          <p class="year-text" style="color: #343434;">
             臺語歌曲多面向發展，許多華語歌手的專輯中，也將臺語作為一種語言創作，同時收錄華語及臺語歌曲。
           </p>
         </div>
@@ -363,7 +366,7 @@
           <p
             style="line-height: 40px;color: #343434; letter-spacing: 1px; font-size: 36px; text-align: right; padding-right: 10px;">
             2010年至今</p>
-          <p style="line-height: 40px;color: #343434; letter-spacing: 1px;">
+          <p class="year-text" style="color: #343434;">
             數位音樂興起，串流音樂成為主流。獨立音樂也逐漸成為臺語流行音樂的重要組成，如閃靈樂團、滅火器樂團、濁水溪公社、董事長樂團、茄子蛋、隨性樂團Random、美秀集團、拍謝少年、淺堤等。
           </p>
         </div>
@@ -385,30 +388,34 @@
     </p>
   </div>
 
-  <div style="height: 275vh; background-color: rgba(255, 255, 255, 0.897); position: relative;">
+  <div id="teacher-text" style=" background-color: rgba(255, 255, 255, 0.897); position: relative;">
     <div style="height: 100vh; position: sticky; top:0;">
-      <img style="width: 25%; position: absolute; left: 10%; bottom: -5%;" src="chen-02.png" alt="">
+      <img id="teacher-img" style="width: 25%;position: absolute;  left: 8%; float:left;" src="chen-02.png" alt="">
     </div>
     <p style="position: relative; font-weight:500; font-size: 18px; color: black; 
-    top: -50vh; left: 40%; width: 50vw;">拋開感性的情緒，現代的臺語歌創作者，特別是指 2010 年後的新生代創作者，需要面臨的挑戰其實不少。<br><br>
+    top: -70vh; left: 35%; max-height: 400vh; width: 60vw;">拋開感性的情緒，現代的臺語歌創作者，特別是指 2010
+      年後的新生代創作者，需要面臨的挑戰其實不少。<br><br><br>
       首先，臺語歌創作者必須面臨的，是一個極度分眾化的年代。各式各樣的媒體雨後春筍般誕生，除了傳統的電視、廣播、唱片外，聽眾們更廣泛使用的，可能是網路影音或串流平臺。<br><br>
       這樣的觀賞及消費型態其實是正反並陳，隨著獲取歌曲聆聽經驗變得容易，大數據資料分析下的影音平臺推播功能，不同類型的臺語歌曲更有機會被聽眾發現和聆聽，<br><br>
-      然而也由於聆聽歌曲的管道比比皆是，唱片成了收藏品，創作者們能夠賺取利潤的管道，逐漸轉型成以演唱會、周邊商品販售為主。但這些必須建立在擁有「市場」之前，而現實情況中，臺語歌的市場較為小眾，是不爭的事實。<br><br>
+      然而也由於聆聽歌曲的管道比比皆是，唱片成了收藏品，創作者們能夠賺取利潤的管道，逐漸轉型成以演唱會、周邊商品販售為主。但這些必須建立在擁有「市場」之前，而現實情況中，<span
+        style="background-color: #d8cea4;">臺語歌的市場較為小眾，是不爭的事實。</span><br><br>
       除此之外，創作本身以外繁雜的事項，很多時候僅靠創作者本身獨立負擔是非常吃力的，因此在知名度大躁之前，許多創作者可能會需要以兼職的方式進行創作，畢竟先活下去依舊是最重要的。<br><br><br>
-      語言本身的斷層，對於新生代臺語創作者來說亦是一大挑戰。<br><br>
+      <span style="background-color: #d8cea4;">語言本身的斷層</span>，對於新生代臺語創作者來說亦是一大挑戰。<br><br><br>
       會聽、會說臺語和會使用臺語創作其實是兩個層次，臺語在遣詞用字上有許多獨特的表達方式，而這些與華語不互通的用法正在悄悄流逝。舉例來說，華語的「打牙祭」在臺語中會有「拜牙座王」的說法、「袒護」會說成「掩胡」。<br><br>
-      這些用法若不是經過特別學習，對於現代的創作者而言並不簡單。因此，「倒字」、「華語直翻臺語」的情況屢屢出現於 2010 年代後的臺語創作歌曲中。<br><br>
+      這些用法若不是經過特別學習，對於現代的創作者而言並不簡單。因此，「倒字」、「華語直翻臺語」的情況屢屢出現於 2010 年代後的臺語創作歌曲中。<br><br><br>
       臺語的漢字書寫也是博大精深。同一個漢字可以有許多不同的讀音，可以文讀也可以白讀，如到金紙店你可以買「香香兩兩」，是完全不同的詞性及臺語發音，但寫成漢字後，會需要搭配文字背後的文化才容易理解。<br><br>
-      更不用說臺語還牽扯到腔調的問題，在華語文文字和發音分開發展的歷史脈絡之下，臺語創作者需要投注更多心力去試圖找到能更親近群眾的解方。<br><br>
-      訪談尾聲，陳峙維感嘆：「臺語歌市場這麼小，創作者需要去思考如何寫出臺味、做出代表性、找到平臺，否則不是在喊口號，就真的是會成為『志業』，很難存活。」
+      更不用說臺語還牽扯到腔調的問題，在華語文文字和發音分開發展的歷史脈絡之下，臺語創作者需要投注更多心力去試圖找到能更親近群眾的解方。<br><br><br>
+      訪談尾聲，陳峙維感嘆：「臺語歌市場這麼小，<span
+        style="background-color: #d8cea4;">創作者需要去思考如何寫出臺味、做出代表性、找到平臺</span>，否則不是在喊口號，就真的是會成為『志業』，很難存活。」
     </p>
   </div>
 
-  <div style="height: 50vh; background-color: rgb(197, 197, 197);">
-    <div style="position: relative; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);"> 
-      <p style="color: black; text-align: center;">背景音樂：歹勢中年<br>建議開啟聲音聆聽</p>
+  <div style="height: 20vh; background-color: rgb(221, 221, 221);">
+    <div style="position: relative; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
+      <p style="color: black; text-align: center;">背景音樂：拍謝少年－〈歹勢中年〉<br>建議開啟聲音聆聽</p>
       <audio id="paisei_audio" src="paisei_song.mp3" autoplay="" loop="loop"></audio>
-      <div id="audio_btn2" class="audio-pause" style="width: 70px; height: 70px; position: relative; left: 50%; transform: translateX(-50%);"></div>
+      <div id="audio_btn2" class="audio-pause"
+        style="width: 30px; height: 30px; position: relative; left: 50%; transform: translateX(-50%);"></div>
 
     </div>
 
@@ -417,14 +424,13 @@
   <div id="audio-02-start"
     style="height: 100vh; background-image: url(sing.jpeg); background-size: cover; background-position: center;">
 
-    <div
-      style="position: relative; height: 80vh; width: 50vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
-      
+    <div id="music-box" style="position: relative;  left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
+
       <h1 style="font-size: 36px; color: white; text-align: center; font-weight: 700;">共咱本土的語言唱出來</h1>
       <p style="font-size: 18px; color: white; text-align: center; font-weight: 500;">kā lán pún-thóo--ê gí-giân
         tshiùnn tshut-lâi</p>
       <br>
-      <br>
+
       <p style="font-size: 16px; color: white;">
         自1990年代的新臺語歌運動後，臺語歌曲近年來在黯淡中透出光亮，數位音樂時代來臨，年輕一代開始意識到臺語的意義，在價值追求的同時也讓臺語逐漸復甦。<br>
         <br>
@@ -440,50 +446,66 @@
 
   <!-- 阿德 -->
   <div id="adei" style="height: 100vh; background-color: #646464; position: relative;">
-    <img style="width: 60%; float: right; position: relative; top: 50%; transform:translateY(-50%);"
+
+
+    <img style="margin-left: 20px;width: 60%; float: right; position: relative; top: 10%; transform:translateY(-10%);"
       src="https://lh3.googleusercontent.com/lAWwnfh5VeMvDFcQe_fLpywg0Hj8GmC4mCqX7qPvBgxfeHoiJQPdEXmBvJIkIwOO6xmZUWKKGdi0zdK7Ddj-S2aBmufxbIHBvaUIVXIghRzKwk7Ugx4Ez_cAiSrRLqjlK-W-qpzsRg=w2400"
       alt="">
-    <h1
-      style="position: relative; top: 10%; left: 10%; font-size: 72px; font-family: 'Noto Serif TC', serif; font-weight: 900;">
-      流氓阿德</h1>
-    <!--   <img style="width: 10%; position: relative; left: 20%; top: 10%; "src="https://lh3.googleusercontent.com/P3LyCkn6pvfuDWPR1iOMOekCeKwjY3QVqlduBpddCkS0xhVT7tJ2y99oNV9xQt9T6HIJfHZHdMhvHXRuEriUrDDBmdck_LLtTo1Am4-xQ2ktvlJrEPFvicRfVXam_BB-RGO8Zgi_yQ=w2400" alt=""> -->
-    <p style="position: absolute; left: 2.5%; top: 30%; text-align: center;
-            color: #EAE5D1; font-size: 24px; font-family: 'Noto Serif TC', serif; font-weight: 700; width: 40%;">
-      「使用臺語創作，
-      <br>我可以展現比華語多出幾百幾千倍的情感。」</p>
 
-    <p style="position: absolute; left: 5.5%; top: 45%; text-align: left;
-    color: #fff; font-size: 16px; font-family: 'Noto Serif TC', serif; font-weight: 500; width: 30%;">
-    出道即將滿三十周年的流氓阿德，年輕時在鑫音樂擔任製作助理，因代替臨時無法到場的林強演唱泡麵廣告歌曲〈強強滾〉意外踏入歌壇。<br><br>
 
-      流氓阿德的創作一直以來都是以臺語為主，在進入到水晶唱片後，發現身邊都是「叛亂份子」，大家都在寫臺語歌，索性也試著寫寫看。就這樣，他找到了表達自己最好的方式......
+    <div style="position: relative; margin: 0 5%;top: 50%; transform:translateY(-50%);">
+
+      <h1 class="card-title" style="position: relative;
+      font-size: 72px; font-family: 'Noto Serif TC', serif; font-weight: 900; text-align: center; margin-bottom: 20px;">
+        流氓阿德</h1>
+
+      <!--   <img style="width: 10%; position: relative; left: 20%; top: 10%; "src="https://lh3.googleusercontent.com/P3LyCkn6pvfuDWPR1iOMOekCeKwjY3QVqlduBpddCkS0xhVT7tJ2y99oNV9xQt9T6HIJfHZHdMhvHXRuEriUrDDBmdck_LLtTo1Am4-xQ2ktvlJrEPFvicRfVXam_BB-RGO8Zgi_yQ=w2400" alt=""> -->
+      <p style=" 
+            color: #EAE5D1; font-size: 24px; font-family: 'Noto Serif TC', serif; font-weight: 700; ">
+        「使用臺語創作，
+        <br>我可以展現比華語多出幾百幾千倍的情感。」</p>
+
+      <p style="
+    color: #fff; font-size: 16px; font-family: 'Noto Serif TC', serif; font-weight: 500; ">
+        出道即將滿三十周年的流氓阿德，年輕時在鑫音樂擔任製作助理，因代替臨時無法到場的林強演唱泡麵廣告歌曲〈強強滾〉意外踏入歌壇。<br><br>
+
+        流氓阿德的創作一直以來都是以臺語為主，在進入到水晶唱片後，發現身邊都是「叛亂份子」，大家都在寫臺語歌，索性也試著寫寫看。就這樣，他找到了表達自己最好的方式......
       </p>
+
+
+    </div>
     <a href="adei.html">
-      <p class="btn" style="position: absolute; left: 5%; bottom: 5%;">完整專訪</p>
+      <p class="btn" style="position: absolute; right: 5%; top: 5%;">完整專訪</p>
     </a>
+
+
 
 
   </div>
 
   <!-- 富凱 -->
   <div id="fukai" style="height: 100vh; background-color: #343434; position: relative;">
-    <img style="width: 60%; float: left; position: relative; top: 50%; transform:translateY(-50%);"
+    <img style="margin-right: 20px;width: 60%; float: left; position: relative; top: 10%; transform:translateY(-10%);"
       src="https://lh3.googleusercontent.com/XG2C7OXTm7OunkcyDWUzUQQbh20NoOVHnGag-2d_wK_3snpBPcnYBifafI4Xm6v4_Kn33MzUuDVIynU3ZFYx6BWiIxleeeBdoYrG82pAQXKV563_U6X5B1XjoMuy7CFczh3Kve2Cig=w2400"
       alt="">
-    <h1
-      style="position: relative; padding: 10px; top: 10%; left: 3%; font-size: 72px; font-family: 'Noto Serif TC', serif; color: #D6D6D6; font-weight: 900;">
-      許富凱</h1>
-    <!--   <img style="width: 10%; position: relative; left: 5%; "src="https://lh3.googleusercontent.com/P3LyCkn6pvfuDWPR1iOMOekCeKwjY3QVqlduBpddCkS0xhVT7tJ2y99oNV9xQt9T6HIJfHZHdMhvHXRuEriUrDDBmdck_LLtTo1Am4-xQ2ktvlJrEPFvicRfVXam_BB-RGO8Zgi_yQ=w2400" alt=""> -->
-    <p style="position: absolute; text-align: center; right: 5%; top: 30%;
-            color: #EAE5D1; font-size: 24px; font-family: 'Noto Serif TC', serif; font-weight: 700; width: 40%;">
-      「沒有舊的，哪會有新的。」</p>
-    <p style="position: absolute; right: 5.5%; top: 40%; text-align: left;
-    color: #fff; font-size: 16px; font-family: 'Noto Serif TC', serif; font-weight: 500; width: 30%;">從小開始學唱歌，2004年參與八大電視《亞洲新人歌唱大賽》，獲得年度總冠軍。出道十年，連續七度入圍金曲獎，並在2021年以專輯《拾歌》奪得第32屆金曲最佳臺語男歌手獎。<br><br>
+    <div style="position: relative; margin: 0 5%;top: 50%; transform:translateY(-50%);">
+      <h1
+        style="position: relative;  font-size: 72px; font-family: 'Noto Serif TC', serif; color: #D6D6D6; font-weight: 900; text-align: center; margin-bottom: 20px;">
+        許富凱</h1>
+      <!--   <img style="width: 10%; position: relative; left: 5%; "src="https://lh3.googleusercontent.com/P3LyCkn6pvfuDWPR1iOMOekCeKwjY3QVqlduBpddCkS0xhVT7tJ2y99oNV9xQt9T6HIJfHZHdMhvHXRuEriUrDDBmdck_LLtTo1Am4-xQ2ktvlJrEPFvicRfVXam_BB-RGO8Zgi_yQ=w2400" alt=""> -->
+      <p style="
+            color: #EAE5D1; font-size: 24px; font-family: 'Noto Serif TC', serif; font-weight: 700; ">
+        「沒有舊的，哪會有新的。」</p>
+      <p style="
+    color: #fff; font-size: 16px; font-family: 'Noto Serif TC', serif; font-weight: 500; ">
+        從小開始學唱歌，2004年參與八大電視《亞洲新人歌唱大賽》，獲得年度總冠軍。出道十年，連續七度入圍金曲獎，並在2021年以專輯《拾歌》奪得第32屆金曲最佳臺語男歌手獎。<br><br>
 
-      臺語歌曾讓許富凱又愛又恨。從小時候唱臺語歌怕被同學知道，一直到高中還是會對於唱臺語歌感到不好意思。然而歲月總會帶來禮物，走過十幾年寒暑，如今臺語歌已成了許富凱獨特的印記......
+        臺語歌曾讓許富凱又愛又恨。從小時候唱臺語歌怕被同學知道，一直到高中還是會對於唱臺語歌感到不好意思。然而歲月總會帶來禮物，走過十幾年寒暑，如今臺語歌已成了許富凱獨特的印記......
       </p>
+    </div>
+
     <a href="fukai.html">
-      <p class="btn" style="position: absolute; bottom: 5%; right: 5%;">完整專訪</p>
+      <p class="btn" style="position: absolute; top: 5%; left: 5%;">完整專訪</p>
     </a>
 
 
@@ -491,26 +513,28 @@
 
   <!-- 拍謝 -->
   <div id="paisei" style="height: 100vh; background-color: #646464; position: relative;">
-    <img style="width: 60%; float: right; position: relative; top: 50%; transform:translateY(-50%);"
+    <img style="margin-left: 20px;width: 60%; float: right; position: relative; top: 10%; transform:translateY(-10%);"
       src="https://lh3.googleusercontent.com/OIXJcNbmWSYmggC-7UKR87ybjdlTCDtcODRVdbe6QkF7qNPfZJNWwluz8Va5JEoJa6DlpWKoxKbqws2ZabuXUaS9NX5UqksQX9UIG7MTGUb7hkj_KgbnHom82nHtEnvYmUpV-fsmVQ=w2400"
       alt="">
-    <h1 style="position: relative; padding: 10px; left: 10%; top: 10%;
-             font-size: 72px; font-family: 'Noto Serif TC', serif; font-weight: 900;">拍謝少年</h1>
-    <!--   <img style="width: 10%; position: relative; left: 20%; "src="https://lh3.googleusercontent.com/P3LyCkn6pvfuDWPR1iOMOekCeKwjY3QVqlduBpddCkS0xhVT7tJ2y99oNV9xQt9T6HIJfHZHdMhvHXRuEriUrDDBmdck_LLtTo1Am4-xQ2ktvlJrEPFvicRfVXam_BB-RGO8Zgi_yQ=w2400" alt=""> -->
-    <p style="position: absolute; left: 2.5%; top: 30%; text-align: center;
-    color: #EAE5D1; font-size: 24px; font-family: 'Noto Serif TC', serif; font-weight: 700; width: 40%;">
-      「臺語是跟我們最親近的語言。」</p>
-    <p style="position: absolute; left: 5.5%; top: 40%; text-align: left;
-    color: #fff; font-size: 16px; font-family: 'Noto Serif TC', serif; font-weight: 500; width: 30%;">
-    拍謝少年，是2022年元旦登上總統府舞臺的天團。除了這樣高規格的舞臺，他們的表演場域也可以在住家陽臺上、廟口前、火鍋店內、漁村裡。然而不論表演的場域在哪裡，不變的是他們鮮明的臺語搖滾標誌。<br><br>
 
-    對拍謝少年來說，臺語是來自家人的語言。即使經歷了戒嚴時期的國語運動，父母親在面對孩子時使用了更多「國語」作為溝通工具，臺語卻依舊竄流在他們的血液之中......
-      
-  </p>
+    <div style="position: relative; margin: 0 5%;top: 50%; transform:translateY(-50%);">
+      <h1 style="position: relative;
+      font-size: 72px; font-family: 'Noto Serif TC', serif; font-weight: 900; text-align: center; margin-bottom: 20px;">拍謝少年</h1>
+
+      <p style="color: #EAE5D1; font-size: 24px; font-family: 'Noto Serif TC', serif; font-weight: 700; ">
+        「臺語是跟我們最親近的語言。」</p>
+      <p style="
+      color: #fff; font-size: 16px; font-family: 'Noto Serif TC', serif; font-weight: 500; ">
+        拍謝少年，是2022年元旦登上總統府舞臺的天團。除了這樣高規格的舞臺，他們的表演場域也可以在住家陽臺上、廟口前、火鍋店內、漁村裡。然而不論表演的場域在哪裡，不變的是他們鮮明的臺語搖滾標誌。<br><br>
+
+        對拍謝少年來說，臺語是來自家人的語言。即使經歷了戒嚴時期的國語運動，父母親在面對孩子時使用了更多「國語」作為溝通工具，臺語卻依舊竄流在他們的血液之中......
+
+      </p>
+    </div>
 
 
     <a href="paisei.html">
-      <p class="btn" style="position: absolute; left: 5%; bottom: 5%;">完整專訪</p>
+      <p class="btn" style="position: absolute; right: 5%; top: 5%;">完整專訪</p>
     </a>
 
   </div>
@@ -528,7 +552,7 @@
   <div style="height: 100vh;position: relative; overflow:hidden; background-color: #000;">
     <video style="height: 120vh; position: absolute; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);"
       autoplay muted loop src="sunrise.mp4"></video>
-    <p style="width: 60vw; position: relative; top: 20%; left: 50%; transform: translateX(-50%);
+    <p id="ending-text" style=" position: relative; top: 20%; left: 50%; transform: translateX(-50%);
     text-align: center; color:white; font-size: 20px; font-weight: 700;">
       世界音樂的趨勢蓬勃發展，被壓迫的歷史無法重來，在這個人人強調要做自己卻又容易被同化的年代，臺語歌的創作之路不會簡單。<br><br>
       所謂危機就是轉機，對於臺語的未來，我們還是抱著滿心期待。
@@ -577,15 +601,18 @@
         var scrolled = $(window).scrollTop();
         var music = document.getElementById("year_audio");
         var music2 = document.getElementById("paisei_audio");
-
+        music.pause();
+        music2.pause();
         // if (scrolled >= $("#audio-01-start").offset().top) {
         //   music.play();
         // }
-        // if (scrolled + winh > $("#audio-01-end").offset().top) {
-        //   music.pause();
-        // }
+        if (scrolled + winh > $("#audio-01-end").offset().top) {
+          music.pause();
+          $("#audio_btn").removeClass("audio-play").addClass("audio-pause");
+        }
         // if (scrolled < $("#audio-01-start").offset().top) {
         //   music.pause();
+        //   $("#audio_btn").removeClass("audio-play").addClass("audio-pause");
         // }
 
         // if (scrolled > $("#audio-02-start").offset().top) {
@@ -594,21 +621,28 @@
 
         // if (scrolled <= $("#audio-02-start").offset().top) {
         //   music2.pause();
+        //   $("#audio_btn2").removeClass("audio-pause").addClass("audio-play");
         // }
 
-        $("#audio_btn").click(function(){
-          if (music.paused){music.play();
+        $("#audio_btn").click(function () {
+          if (music.paused) {
+            music.play();
             $("#audio_btn").removeClass("audio-pause").addClass("audio-play");
-          }else{music.pause();
-            $("#audio_btn").removeClass("audio-play").addClass("audio-pause");}
+          } else {
+            music.pause();
+            $("#audio_btn").removeClass("audio-play").addClass("audio-pause");
+          }
 
         });
 
-        $("#audio_btn2").click(function(){
-          if (music2.paused){music2.play();
+        $("#audio_btn2").click(function () {
+          if (music2.paused) {
+            music2.play();
             $("#audio_btn2").removeClass("audio-pause").addClass("audio-play");
-          }else{music2.pause();
-            $("#audio_btn2").removeClass("audio-play").addClass("audio-pause");}
+          } else {
+            music2.pause();
+            $("#audio_btn2").removeClass("audio-play").addClass("audio-pause");
+          }
 
         });
 
