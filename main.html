@@ -30,7 +30,7 @@
         在最好也最壞的年代，<br>
         唱出臺語的未來
       </h1>
-      <p style="position: absolute; top: 40%; transform: translateY(-50%); font-family: 'Noto Serif TC', serif; color: #c4c4c4; font-weight: 500; font-size: 14px;
+      <p style="position: relative; top: 0%; transform: translateY(-50%); font-family: 'Noto Serif TC', serif; color: #c4c4c4; font-weight: 500; font-size: 14px;
       left: 35%; transform: translateX(-50%); text-align: left; ">最後更新日期於2022年1月11日</p>
 
       <p class="slideanimate h1" data-pos=100 data-direction="fadeInUp" style="position: absolute; top: 60%; transform: translateY(-50%); 
@@ -102,10 +102,20 @@
 
   <div style="height: 40vh; background-color: #333;">
     <div
-      style="position: relative; height: 60vh; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
-      <p style="position: relative; font-weight:700; font-size: 18px; color: white; 
-        top: 50%; transform: translateY(-50%);">
+      style="position: relative; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
+      <p style=" font-weight:700; font-size: 18px; color: white; 
+        ">
         過去政策力推「國語」，臺語逐漸凋零，預計再過30〜40年，若現在的狀況持續，臺語將會消失。</p>
+    </div>
+
+  </div>
+
+  <div style="height: 50vh; background-color: rgb(197, 197, 197);">
+    <div style="position: relative; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);"> 
+      <p style="color: black; text-align: center;">背景音樂：桃花泣血記<br>建議開啟聲音聆聽</p>
+      <audio id="year_audio" src="year.mp3" autoplay="" loop="loop"></audio>
+      <div id="audio_btn" class="audio-pause" style="width: 70px; height: 70px; position: relative; left: 50%; transform: translateX(-50%);"></div>
+
     </div>
 
   </div>
@@ -113,9 +123,8 @@
   <div id="audio-01-start" style="height: 100vh; overflow:hidden; position: relative;">
     <video style="height: 120vh; position: relative; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);"
       autoplay muted loop src="turning.mp4"></video>
-    <audio id="year_audio" src="year.mp3" autoplay="" loop="loop"></audio>
-    <p style="position: absolute; font-weight:700; font-size: 12px; color: white; 
-    top: 10%; transform: translateY(-50%); left: 10%; width: 50vw;">背景音樂：桃花泣血記<br>建議開啟聲音聆聽</p>
+    
+  
     <p style="position: absolute; font-weight:700; font-size: 18px; color: white; 
     top: 50%; transform: translateY(-50%); left: 10%; width: 50vw;">
       臺語，曾經是臺灣最多人使用的語言。<br>
@@ -395,14 +404,22 @@
     </p>
   </div>
 
+  <div style="height: 50vh; background-color: rgb(197, 197, 197);">
+    <div style="position: relative; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);"> 
+      <p style="color: black; text-align: center;">背景音樂：歹勢中年<br>建議開啟聲音聆聽</p>
+      <audio id="paisei_audio" src="paisei_song.mp3" autoplay="" loop="loop"></audio>
+      <div id="audio_btn2" class="audio-pause" style="width: 70px; height: 70px; position: relative; left: 50%; transform: translateX(-50%);"></div>
+
+    </div>
+
+  </div>
+
   <div id="audio-02-start"
     style="height: 100vh; background-image: url(sing.jpeg); background-size: cover; background-position: center;">
 
     <div
       style="position: relative; height: 80vh; width: 50vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
-      <audio id="paisei_audio" src="paisei_song.mp3" autoplay="" loop="loop"></audio>
-      <p style="position: absolute; font-weight:700; font-size: 12px; color: white; 
-    top: 10%; transform: translateY(-50%); left: -30%; width: 50vw;">背景音樂：拍謝少年<br>建議開啟聲音聆聽</p>
+      
       <h1 style="font-size: 36px; color: white; text-align: center; font-weight: 700;">共咱本土的語言唱出來</h1>
       <p style="font-size: 18px; color: white; text-align: center; font-weight: 500;">kā lán pún-thóo--ê gí-giân
         tshiùnn tshut-lâi</p>
@@ -561,23 +578,39 @@
         var music = document.getElementById("year_audio");
         var music2 = document.getElementById("paisei_audio");
 
-        if (scrolled >= $("#audio-01-start").offset().top) {
-          music.play();
-        }
-        if (scrolled + winh > $("#audio-01-end").offset().top) {
-          music.pause();
-        }
-        if (scrolled < $("#audio-01-start").offset().top) {
-          music.pause();
-        }
+        // if (scrolled >= $("#audio-01-start").offset().top) {
+        //   music.play();
+        // }
+        // if (scrolled + winh > $("#audio-01-end").offset().top) {
+        //   music.pause();
+        // }
+        // if (scrolled < $("#audio-01-start").offset().top) {
+        //   music.pause();
+        // }
 
-        if (scrolled > $("#audio-02-start").offset().top) {
-          music2.play();
-        }
+        // if (scrolled > $("#audio-02-start").offset().top) {
+        //   music2.play();
+        // }
 
-        if (scrolled <= $("#audio-02-start").offset().top) {
-          music2.pause();
-        }
+        // if (scrolled <= $("#audio-02-start").offset().top) {
+        //   music2.pause();
+        // }
+
+        $("#audio_btn").click(function(){
+          if (music.paused){music.play();
+            $("#audio_btn").removeClass("audio-pause").addClass("audio-play");
+          }else{music.pause();
+            $("#audio_btn").removeClass("audio-play").addClass("audio-pause");}
+
+        });
+
+        $("#audio_btn2").click(function(){
+          if (music2.paused){music2.play();
+            $("#audio_btn2").removeClass("audio-pause").addClass("audio-play");
+          }else{music2.pause();
+            $("#audio_btn2").removeClass("audio-play").addClass("audio-pause");}
+
+        });
 
 
 

@@ -214,3 +214,17 @@
       -webkit-animation-name: fadeInRight;
       animation-name: fadeInRight;
     }
+
+    /* 聲音按鈕 */
+
+    .audio-pause{
+      background-image: url(../audio_pause.png);
+      background-size: contain;
+      cursor: pointer;
+    }
+
+    .audio-play{
+      background-image: url(../audio_play.png);
+      background-size: contain;
+      cursor: pointer;
+    }
