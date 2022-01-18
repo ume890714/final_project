@@ -208,6 +208,10 @@
       font-size: 72px; font-family: 'Noto Serif TC', serif; font-weight: 900; text-align: center; margin-bottom: 20px;
     }
 
+    .card-quote{
+      color: #EAE5D1; font-size: 24px;  font-weight: 700;
+    }
+
     #ending-text {
       width: 60vw;
     }
@@ -333,8 +337,12 @@
       }
 
       .card-title{
-        font-size: 48px;
+        font-size: 32px;
         text-align: left;
+      }
+
+      .card-quote{
+        font-size: 20px;
       }
 
       .btn{
