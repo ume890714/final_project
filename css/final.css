@@ -158,6 +158,11 @@
       /* transform: translateY(-50%); */
     }
 
+    .preface-text2{
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
     .preface-comic-box {
       height: 80vh;
       width: 65vw;
@@ -183,7 +188,7 @@
     }
 
     #teacher-text {
-      height: 300vh;
+      height: 250vh;
     }
 
     #teacher-img {
@@ -261,13 +266,13 @@
 
     @media screen and (max-width: 600px) {
       #teacher-text {
-        height: 400vh;
+        height: 425vh;
       }
 
       .preface-img {
-        width: 60vw;
-        top: 75%;
-        left: -10%;
+        width: 53vw;
+        top: 77%;
+        left: -15%;
 
       }
 
@@ -277,11 +282,13 @@
 
       .preface-text {
         clear: right;
-        top: -55%;
+        top: -45%;
       }
 
       .preface-img2 {
-        left: 10%;
+        width: 75vw;
+        left: 2%;
+        top: 70%;
       }
 
       .preface-text2 {
