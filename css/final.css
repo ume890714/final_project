@@ -203,6 +203,11 @@
       width: 50vw;
     }
 
+    .card-title{
+      position: relative;
+      font-size: 72px; font-family: 'Noto Serif TC', serif; font-weight: 900; text-align: center; margin-bottom: 20px;
+    }
+
     #ending-text {
       width: 60vw;
     }
@@ -325,6 +330,15 @@
 
       #music-box {
         width: 90vw;
+      }
+
+      .card-title{
+        font-size: 60px;
+        text-align: left;
+      }
+
+      .btn{
+        background-color: rgba(256,256,256,0.5);
       }
 
       .ending-h1 {
