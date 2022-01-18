@@ -1,74 +1,77 @@
-    /* *{
-        border: solid;
-    }
-     */
-    body,html{
+    /* * {
+      border: solid;
+    } */
+
+    body,
+    html {
       padding: 0px;
       margin: 0px;
       font-family: 'Noto Serif TC', serif;
       letter-spacing: 1px;
-    /*   background-color: black; */
+      /*   background-color: black; */
     }
-    
-    
-    
-    .section{
+
+
+
+    .section {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 50% 50%;
     }
-    
-    .p{
+
+    .p {
       margin: 40px auto;
       color: black;
       line-height: 40px;
       width: 50vw;
       font-size: 18px;
     }
-    
-    
-    .article-title{
-      font-size: 36px; 
-      font-weight: 700; 
+
+
+    .article-title {
+      font-size: 36px;
+      font-weight: 700;
     }
-    
-    .article-name{
+
+    .article-name {
       color: black;
       padding: 50px;
       text-align: center;
       font-weight: 600;
       font-size: 50px;
     }
-    .article-head{
-      position: sticky; top: 0px;
-      height: 100vh;  
-      background-position: top; 
+
+    .article-head {
+      position: sticky;
+      top: 0px;
+      height: 100vh;
+      background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
-      
+
     }
-    
-    .h1{
+
+    .h1 {
       color: white;
       padding: 50px;
       text-align: center;
       font-weight: 600;
       font-size: 50px;
     }
-    
-    .h2{
+
+    .h2 {
       color: #C2C2C2;
       text-align: center;
       padding: 50px;
       padding-top: 0px;
     }
-    
-    
-    
-    
-    
-    
-    iframe{
+
+
+
+
+
+
+    iframe {
       width: 50vw;
       height: 75vh;
       max-width: 900px;
@@ -76,37 +79,37 @@
       left: 50%;
       transform: translateX(-50%);
     }
-    
-    .small-pic{
+
+    .small-pic {
       position: absolute;
     }
-    
-    .pic{
+
+    .pic {
       width: 75vw;
       position: relative;
       left: 50%;
       transform: translateX(-50%);
     }
-    
-    .icon{
+
+    .icon {
       width: 100px;
       height: 100px;
       margin: 50px;
     }
-    
-    .timeline{
+
+    .timeline {
       stroke: black;
     }
 
-    a{
-      text-decoration:none;
+    a {
+      text-decoration: none;
     }
 
-    a:hover{
+    a:hover {
       color: white;
     }
-    
-    .btn{
+
+    .btn {
       padding: 20px 40px;
       font-size: 20px;
       font-weight: 700;
@@ -114,115 +117,202 @@
       display: inline-block;
       cursor: pointer;
       color: #333;
-      
+
     }
-    
-    .btn:hover{
+
+    .btn:hover {
       background-color: #444;
       transition-duration: 0.2s;
       color: white;
       opacity: 1;
     }
 
-    .img-btn{
+    .img-btn {
       cursor: pointer;
       z-index: 50;
     }
 
-    #heading_h1{
+    #heading_h1 {
       font-size: 60px;
     }
-    
-    .preface-box{
-      position: relative; 
-      height: 60vh; 
-      width: 65vw; 
-      left: 50%; 
-      top:50%; 
-      transform:translateY(-50%) translateX(-50%);
+
+    .preface-box {
+      position: relative;
+      height: 60vh;
+      width: 65vw;
+      left: 50%;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
     }
 
-    .preface-img{
-      width: 30vw; position: relative; top: 50%; transform: translateY(-50%);
+    .preface-img {
+      width: 30vw;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
-    .preface-comic{
-      width: 60%;  
-      position: absolute; 
-      left: 20%; 
-      bottom:0px; 
+    .preface-text{
+      position: relative;
+      color: white;
+      /* transform: translateY(-50%); */
+    }
+
+    .preface-comic-box{
+      height: 80vh; width: 65vw;
+    }
+
+    .preface-comic {
+      width: 60%;
+      position: absolute;
+      left: 20%;
+      bottom: 0px;
       transform: translateX(-50%);
       background-color: white;
     }
 
-    .year-text{
-      line-height: 40px;color: white; letter-spacing: 1px;
+    .year-box{
+      width: 20vw;
     }
 
-    #teacher-text{
+    .year-text {
+      line-height: 40px;
+      color: white;
+      letter-spacing: 1px;
+    }
+
+    #teacher-text {
       height: 300vh;
     }
-    #teacher-img{
+
+    #teacher-img {
       bottom: -5%;
     }
 
-    #music-box{
-       width: 50vw;
+    #music-box {
+      width: 50vw;
     }
 
-    #ending-text{
+    #ending-text {
       width: 60vw;
     }
+    .ending-h1{
+      top: 30%;
+    }
+
 
 
     /* RWD */
-    @media (max-width: 767px) {
-      .p{
+    
+
+
+
+    @media screen and (max-width: 767px) {
+      .p {
         width: 80%;
       }
-      iframe{
+
+      iframe {
         width: 100%;
       }
-      #heading_h1{
+
+      #heading_h1 {
         font-size: 48px;
+      }
+
+      .preface-box {
+        /* height: 90vh; */
+        width: 80vw;
+      }
+
+      .preface-img {
+        width: 40vw;
+      }
+
+      
+
+      .preface-comic {
+        width: 100%;
+        left: 0;
+      }
+
+      .year-text {
+        line-height: 30px;
+      }
+
+      #teacher-text {
+        height: 350vh;
+      }
+
+      #teacher-img {
+        bottom: 0;
+      }
+
+      #music-box {
+        width: 80vw;
+      }
+
+      #ending-text {
+        width: 80%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      #teacher-text {
+        height: 400vh;
+      }
+
+      .preface-img {
+        width: 60vw;
+        top: 75%;
+        left: -10%;
+        
       }
 
       .preface-box{
         height: 90vh;
-        width: 80vw;
       }
-      .preface-img{
-        width: 40vw;
+
+      .preface-text{
+        clear: right;
+        top:-55%;
       }
-      .preface-comic{
-        width: 100%;
-        left: 0;
+
+      .preface-img2{
+        left: 10%;
       }
-      .year-text{
-        line-height: 30px;
+      .preface-text2{
+        clear: left;
+        top: -20%;
       }
-      #teacher-text{
-        height: 350vh;
-      }
-      #teacher-img{
-        bottom: 0;
-      }
-      #music-box{
-        width: 80vw;
-      }
-      #ending-text{
+
+      .preface-comic-box{
         width: 80%;
       }
+      .year-text {
+        line-height: 22px;
+        
+      }
+      .year-box{
+        width: 25vw;
+      }
+      .ending-h1{
+        top: 10%;
+      }
+      
     }
-    
+
+
+
+
     /* 開頭漫畫動畫 */
     .slideanimate {
       visibility: hidden;
     }
+
     .slide {
       visibility: visible;
     }
-    
+
     .animated {
       -webkit-animation-duration: 1s;
       animation-duration: 1s;
@@ -230,70 +320,70 @@
       animation-fill-mode: both;
       transition-duration: 0.5s
     }
-    
+
     @-webkit-keyframes fadeInUp {
       from {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
-        -webkit-filter:sepia(0);
+        -webkit-filter: sepia(0);
       }
-    
+
       to {
         opacity: 1;
         -webkit-transform: none;
         transform: none;
-        -webkit-filter:sepia(1);
+        -webkit-filter: sepia(1);
       }
     }
-    
+
     @keyframes fadeInUp {
       from {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
       }
-    
+
       to {
         opacity: 1;
         -webkit-transform: none;
         transform: none;
       }
     }
-    
+
     .fadeInUp {
       -webkit-animation-name: fadeInUp;
       animation-name: fadeInUp;
     }
-    
+
     @-webkit-keyframes fadeInRight {
       from {
         opacity: 0;
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
       }
-    
+
       to {
         opacity: 1;
         -webkit-transform: none;
         transform: none;
       }
     }
-    
+
     @keyframes fadeInRight {
       from {
         opacity: 0;
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
       }
-    
+
       to {
         opacity: 1;
         -webkit-transform: none;
         transform: none;
       }
     }
-    
+
     .fadeInRight {
       -webkit-animation-name: fadeInRight;
       animation-name: fadeInRight;
@@ -301,13 +391,13 @@
 
     /* 聲音按鈕 */
 
-    .audio-pause{
+    .audio-pause {
       background-image: url(../audio_pause.png);
       background-size: contain;
       cursor: pointer;
     }
 
-    .audio-play{
+    .audio-play {
       background-image: url(../audio_play.png);
       background-size: contain;
       cursor: pointer;
