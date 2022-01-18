@@ -145,6 +145,10 @@
       transform: translateY(-50%) translateX(-50%);
     }
 
+    .preface-box-bg{
+      height: 100vh; 
+    }
+
     .preface-img {
       width: 30vw;
       position: relative;
@@ -270,19 +274,29 @@
       }
 
       .preface-img {
-        width: 53vw;
+        width: 55vw;
         top: 77%;
         left: -15%;
 
       }
 
-      .preface-box {
+      
+
+      .preface-box{
+        height: 100vh;
+      }
+      .preface-box2{
         height: 90vh;
+      }
+
+
+      .preface-box-bg{
+        height: 125vh; 
       }
 
       .preface-text {
         clear: right;
-        top: -45%;
+        bottom: 35%;
       }
 
       .preface-img2 {
@@ -307,6 +321,10 @@
 
       .year-box {
         width: 25vw;
+      }
+
+      #music-box {
+        width: 90vw;
       }
 
       .ending-h1 {
