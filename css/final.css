@@ -152,14 +152,15 @@
       transform: translateY(-50%);
     }
 
-    .preface-text{
+    .preface-text {
       position: relative;
       color: white;
       /* transform: translateY(-50%); */
     }
 
-    .preface-comic-box{
-      height: 80vh; width: 65vw;
+    .preface-comic-box {
+      height: 80vh;
+      width: 65vw;
     }
 
     .preface-comic {
@@ -171,7 +172,7 @@
       background-color: white;
     }
 
-    .year-box{
+    .year-box {
       width: 20vw;
     }
 
@@ -196,14 +197,15 @@
     #ending-text {
       width: 60vw;
     }
-    .ending-h1{
+
+    .ending-h1 {
       top: 30%;
     }
 
 
 
     /* RWD */
-    
+
 
 
 
@@ -229,7 +231,7 @@
         width: 40vw;
       }
 
-      
+
 
       .preface-comic {
         width: 100%;
@@ -256,6 +258,7 @@
         width: 80%;
       }
     }
+
     @media screen and (max-width: 600px) {
       #teacher-text {
         height: 400vh;
@@ -265,40 +268,44 @@
         width: 60vw;
         top: 75%;
         left: -10%;
-        
+
       }
 
-      .preface-box{
+      .preface-box {
         height: 90vh;
       }
 
-      .preface-text{
+      .preface-text {
         clear: right;
-        top:-55%;
+        top: -55%;
       }
 
-      .preface-img2{
+      .preface-img2 {
         left: 10%;
       }
-      .preface-text2{
+
+      .preface-text2 {
         clear: left;
         top: -20%;
       }
 
-      .preface-comic-box{
+      .preface-comic-box {
         width: 80%;
       }
+
       .year-text {
         line-height: 22px;
-        
+
       }
-      .year-box{
+
+      .year-box {
         width: 25vw;
       }
-      .ending-h1{
+
+      .ending-h1 {
         top: 10%;
       }
-      
+
     }
 
 
