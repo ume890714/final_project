@@ -67,7 +67,15 @@
     }
 
 
-
+    .spot {
+      background-image: linear-gradient(90deg, rgba(0,0,0,0) 50%,#d8cea4 0);
+      transition: all 1s;
+      background-position: 0;
+      background-size: 200%;
+    }
+    .spotted {
+      background-position: -100%;
+  }
 
 
 
@@ -136,17 +144,19 @@
       font-size: 60px;
     }
 
+
+
     .preface-box {
       position: relative;
       height: 60vh;
       width: 65vw;
-      left: 50%;
-      top: 50%;
-      transform: translateY(-50%) translateX(-50%);
+      margin: 0 auto;
+      top: 10%;
+      
     }
 
-    .preface-box-bg{
-      height: 100vh; 
+    .preface-box-bg {
+      height: 100vh;
     }
 
     .preface-img {
@@ -156,13 +166,15 @@
       transform: translateY(-50%);
     }
 
+    
+
     .preface-text {
       position: relative;
       color: white;
       /* transform: translateY(-50%); */
     }
 
-    .preface-text2{
+    .preface-text2 {
       top: 50%;
       transform: translateY(-50%);
     }
@@ -203,13 +215,19 @@
       width: 50vw;
     }
 
-    .card-title{
+    .card-title {
       position: relative;
-      font-size: 72px; font-family: 'Noto Serif TC', serif; font-weight: 900; text-align: center; margin-bottom: 20px;
+      font-size: 72px;
+      font-family: 'Noto Serif TC', serif;
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 20px;
     }
 
-    .card-quote{
-      color: #EAE5D1; font-size: 24px;  font-weight: 700;
+    .card-quote {
+      color: #EAE5D1;
+      font-size: 24px;
+      font-weight: 700;
     }
 
     #ending-text {
@@ -289,18 +307,19 @@
 
       }
 
-      
 
-      .preface-box{
+
+      .preface-box {
         height: 100vh;
       }
-      .preface-box2{
+
+      .preface-box2 {
         height: 90vh;
       }
 
 
-      .preface-box-bg{
-        height: 125vh; 
+      .preface-box-bg {
+        height: 125vh;
       }
 
       .preface-text {
@@ -336,17 +355,17 @@
         width: 90vw;
       }
 
-      .card-title{
+      .card-title {
         font-size: 42px;
         text-align: left;
       }
 
-      .card-quote{
+      .card-quote {
         font-size: 20px;
       }
 
-      .btn{
-        background-color: rgba(256,256,256,0.5);
+      .btn {
+        background-color: rgba(256, 256, 256, 0.5);
       }
 
       .ending-h1 {
@@ -410,6 +429,8 @@
       animation-name: fadeInUp;
     }
 
+    
+
     @-webkit-keyframes fadeInRight {
       from {
         opacity: 0;
@@ -442,6 +463,48 @@
       -webkit-animation-name: fadeInRight;
       animation-name: fadeInRight;
     }
+
+
+
+    @-webkit-keyframes fadeInUp2 {
+      from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 200%, 0);
+        transform: translate3d(0, 200%, 0);
+        -webkit-filter: sepia(0);
+      }
+
+      to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        -webkit-filter: sepia(1);
+      }
+    }
+
+    @keyframes fadeInUp2 {
+      from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 200%, 0);
+        transform: translate3d(0, 200%, 0);
+      }
+
+      to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    .fadeInUp2 {
+      -webkit-animation-name: fadeInUp2;
+      animation-name: fadeInUp2;
+    }
+
+
+
+
+
 
     /* 聲音按鈕 */
 
