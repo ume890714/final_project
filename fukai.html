@@ -6,12 +6,15 @@
 <title>專訪許富凱</title>
 
 
-<div style=" height: 300vh; position: relative;">
+<div id="outer" style=" height: 300vh; position: relative;">
     <div class="article-head"
         style="background-image: url(https://lh3.googleusercontent.com/7ZONsgE9UONneXPjMj0iAhGoGHb6Im5xOU9ksViuKZ4N6EtEWvW6Gd7SB27A4OnTffO25nNl1AP2kF5TjAlOcTK153Q3CyQLnYfAku46ZpmkvU9LgLZ1Qv0aZeDf2Bc8LCc8khT5fg=w2400); background-position: center;">
-    </div>
-    <div style="position: sticky; top: 0%;height: 100vh; background-color: rgba(0,0,0,0.35);">
         <img style="position: relative; top: 30%; left:-5%; width: 80%; transform: translateY(-50%);"
+        src="https://lh3.googleusercontent.com/Qfg8Qd9V_rBh0vJs0NlDeNfkcatI4yTq1xN06AiftlMkCtu3U-LJsyBXutH0S3xr0trUE2HIkEXRY4DOcRfHqAZWwIk_urV5J8O3rEHHLaw1jC0DXcL6d_-mSno6Ul-mGRNUe5D6AA=w2400"
+        alt="">
+    </div>
+    <div class="opa" data-pos="0" style="position: sticky; top: 0%;height: 100vh; background-color: rgba(0,0,0,0.35);">
+        <img class="opa" data-pos="0" style="position: relative; top: 30%; left:-5%; width: 80%; transform: translateY(-50%);"
             src="https://lh3.googleusercontent.com/Qfg8Qd9V_rBh0vJs0NlDeNfkcatI4yTq1xN06AiftlMkCtu3U-LJsyBXutH0S3xr0trUE2HIkEXRY4DOcRfHqAZWwIk_urV5J8O3rEHHLaw1jC0DXcL6d_-mSno6Ul-mGRNUe5D6AA=w2400"
             alt="">
         <img style="position: absolute; top: 75%;;left: 0%; width: 60%; transform: translateY(-50%);"
@@ -161,4 +164,36 @@
         </div>
     </div>
 
+    <!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+</script>
+
+<script>
+$(function () {
+  var scrollable = $("#outer").height() * 2 / 3;
+  $(window).scroll(function () {
+    var scrolled = $(window).scrollTop();
+    $(".opa").each(function () {
+      $(this).css("opacity", $(this).data("pos") + scrolled / scrollable);
+      // 設定data-pos變數，讓第一層的數字先減完變透明，第二層在第一層消失時剛好透明度為1
+      console.log(scrollable, scrolled);
+    });
+
+  })
+});
+</script>
     <!-- <iframe src="https://www.youtube.com/embed/IQoXh8eaOHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
