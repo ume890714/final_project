@@ -39,8 +39,6 @@
        text-align: left; ">最後更新日期於2022年1月11日</p>
       </div>
 
-
-
       <p class="slideanimate h1" data-pos=100 data-direction="fadeInUp" style="position: absolute; top: 60%; transform: translateY(-50%); 
     font-family: 'Noto Serif TC', serif; color: white; font-weight: 500; font-size: 24px; width: 100%;">
         「你上一次講臺語，是什麼時候？」<br>lí
@@ -50,9 +48,10 @@
   </div>
 
   <!-- 導覽列 -->
-  
+
   <div id="navigation" style="position: fixed; top:0; background-color: rgba(0,0,0,0.7); width: 100vw; height: 100vh; z-index: 100; 
-"><div style="position: absolute;background-color: black; width: 500px; height: 100vh;"></div>
+">
+    <div style="position: absolute;background-color: black; width: 500px; height: 100vh;"></div>
 
     <ul class="ul-out">
       <li><a href="#preface">前言</a></li>
@@ -67,8 +66,7 @@
       <li><a href="#teacher">學者說法</a></li>
     </ul>
   </div>
-  <img id="nav_btn" src="navigation bar.png"
-    alt="">
+  <img id="nav_btn" src="navigation bar.png" alt="">
 
 
   <!-- 前言 -->
@@ -109,9 +107,6 @@
   </div>
 
 
-
-
-
   <div style="height: 400vh; background-color: #444;">
     <div style="position: sticky; width: 100vw; height: 100vh; top: 0%;">
 
@@ -145,7 +140,7 @@
       <p style="color: black; text-align: center;">背景音樂：純純－〈桃花泣血記〉<br>建議開啟聲音聆聽</p>
       <!-- <audio style=" height: 30px; position: relative; left: 50%; transform: translateX(-50%);" id="year_audio"
         src="year.mp3" loop="loop" controls controlslist="nodownload"></audio> -->
-        <audio style=" height: 30px; position: relative; left: 50%; transform: translateX(-50%);" id="year_audio"
+      <audio style=" height: 30px; position: relative; left: 50%; transform: translateX(-50%);" id="year_audio"
         src="year.mp3" loop="loop" controlslist="nodownload"></audio>
       <div id="audio_btn" class="audio-play"
         style="width: 30px; height: 30px; position: relative; left: 50%; transform: translateX(-50%);"></div>
@@ -284,10 +279,6 @@
       </div>
 
 
-
-
-
-
       <!--   1987 -->
       <div id="audio-01-restart" style="height: 150vh; 
                     background-image: url(year_img/1987-1.jpg),
@@ -405,12 +396,10 @@
   </div>
 
 
-
-
   <div id="audio-01-end" style="height: 20vh; background-color: rgb(221, 221, 221);">
     <div style="position: relative; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
       <p style="color: black; text-align: center;">背景音樂：拍謝少年－〈歹勢中年〉<br>建議開啟聲音聆聽</p>
-      <audio  id="paisei_audio" src="paisei_song.mp3" loop="loop"></audio>
+      <audio id="paisei_audio" src="paisei_song.mp3" loop="loop"></audio>
       <!-- <audio style="height: 30px; position: relative; left: 50%; transform: translateX(-50%);" src="paisei_song.mp3"
         loop="loop" controls controlslist="nodownload"></audio> -->
       <div id="audio_btn2" class="audio-play"
@@ -445,16 +434,9 @@
 
   <!-- 阿德 -->
   <div id="adei" style="height: 100vh; background-color: #646464; position: relative;">
-
-
     <img style="margin-left: 20px;width: 60%; float: right; position: relative; top: 10%; transform:translateY(-10%);"
       src="adei-cover.jpg" alt="">
-
-
     <div style="position: relative; margin: 0 5%;top: 50%; transform:translateY(-50%);">
-
-
-
       <h1 class="card-title">
         流氓阿德</h1>
 
@@ -475,7 +457,6 @@
 
         流氓阿德的創作一直以來都是以臺語為主，在進入到水晶唱片後，發現身邊都是「叛亂份子」，大家都在寫臺語歌，索性也試著寫寫看。就這樣，他找到了表達自己最好的方式......
       </p>
-
 
     </div>
     <a href="adei.html">
@@ -662,66 +643,40 @@
       var doch = $(document).height();
       var music = document.getElementById("year_audio");
       var music2 = document.getElementById("paisei_audio");
-      $("#nav_btn").click(function(){
-          $('#navigation').toggle(1000);
-        });
-        $('#navigation').click(function(){
-            $('#navigation').toggle(1000);
-          });
-      
-        $("#audio_btn").click(function () {
-          if ($(this).hasClass("audio-play")) {
-            $("#audio_btn").removeClass("audio-play").addClass("audio-pause");
-            music.play();
-          } else {
-            music.pause();
-            $("#audio_btn").removeClass("audio-pause").addClass("audio-play");
-          }
+      $("#nav_btn").click(function () {
+        $('#navigation').toggle(1000);
+      });
+      $('#navigation').click(function () {
+        $('#navigation').toggle(1000);
+      });
 
-        });
+      $("#audio_btn").click(function () {
+        if ($(this).hasClass("audio-play")) {
+          $("#audio_btn").removeClass("audio-play").addClass("audio-pause");
+          music.play();
+        } else {
+          music.pause();
+          $("#audio_btn").removeClass("audio-pause").addClass("audio-play");
+        }
+      });
 
-        $("#audio_btn2").click(function () {
-          if ($(this).hasClass("audio-play")) {
-            music2.play();
-            $("#audio_btn2").removeClass("audio-play").addClass("audio-pause");
-          } else {
-            music2.pause();
-            $("#audio_btn2").removeClass("audio-pause").addClass("audio-play");
-          }
-
-        });
+      $("#audio_btn2").click(function () {
+        if ($(this).hasClass("audio-play")) {
+          music2.play();
+          $("#audio_btn2").removeClass("audio-play").addClass("audio-pause");
+        } else {
+          music2.pause();
+          $("#audio_btn2").removeClass("audio-pause").addClass("audio-play");
+        }
+      });
 
       $(window).scroll(function () {
         var scrolled = $(window).scrollTop();
-        
-        console.log(doch);
 
-
-        // music.pause();
-        // music2.pause();
-
-        // if (scrolled >= $("#audio-01-start").offset().top) {
-        //   music.play();
-        // }
         if (scrolled + winh > $("#audio-01-end").offset().top) {
           music.pause();
           $("#audio_btn").removeClass("audio-play").addClass("audio-pause");
         }
-        // if (scrolled < $("#audio-01-start").offset().top) {
-        //   music.pause();
-        //   $("#audio_btn").removeClass("audio-play").addClass("audio-pause");
-        // }
-
-        // if (scrolled > $("#audio-02-start").offset().top) {
-        //   music2.play();
-        // }
-
-        // if (scrolled <= $("#audio-02-start").offset().top) {
-        //   music2.pause();
-        //   $("#audio_btn2").removeClass("audio-pause").addClass("audio-play");
-        // }
-
-       
 
         // 動態畫重點
         $(".spot").each(function () {
@@ -729,15 +684,6 @@
             $(this).addClass("spotted");
           }
         });
-
-
-       
-
-        
-        
-
-
-
 
         // 年代卷軸
         $(".opa").each(function () {

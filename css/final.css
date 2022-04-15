@@ -31,7 +31,7 @@
 
     ul{
       list-style-type: none;
-      color: white;
+      
       position: relative;
       
       
@@ -49,10 +49,14 @@
     ul li{
       font-size: 18px;
       margin: 20px;
+      
+    }
+    ul li:hover{
+      color: white;
     }
 
     li a{
-      color: white;
+      color: grey;
     }
 
     .nav-slide{
