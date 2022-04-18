@@ -524,6 +524,20 @@
         width: 30px;
       }
     }
+    @media screen and (max-width: 400px){
+      .preface-text {
+        bottom: 30%;
+      }
+      .preface-img {
+        width: 60vw;
+      }
+      .preface-box{
+        top:40px;
+      }
+      #teacher-text{
+        height: 475vh;
+      }
+    }
 
 
 
