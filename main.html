@@ -22,7 +22,7 @@
   <!-- 標題 -->
 
 
-  <div style="height: 300vh; position: relative;">
+  <div style="height: 200vh; position: relative;">
     <div style="position: sticky; top: 0%; height: 100vh; width: 100vw; background: #000;">
       <video autoplay muted loop style="position: absolute; left: 0; top: 0; width: 100vw; height: 100vh;"
         src="heading.mp4"></video>
@@ -38,11 +38,9 @@
         <p style="font-family: 'Noto Serif TC', serif; color: #c4c4c4; font-weight: 500; font-size: 14px;
        text-align: left; ">最後更新日期於2022年4月22日</p>
       </div>
+      <audio id="heading_speaking" src="tai_mp3/heading.MP3"></audio>
+      <audio id="rain" src="tai_mp3/rain.mp3" loop></audio>
 
-      <p class="slideanimate h1" data-pos=100 data-direction="fadeInUp" style="position: absolute; top: 60%; transform: translateY(-50%); 
-    font-family: 'Noto Serif TC', serif; color: white; font-weight: 500; font-size: 24px; width: 100%;">
-        「你上一次講臺語，是什麼時候？」<br>Lí
-        tíng-pái kóng tâi-gí, sī siánn-mih sî-tsūn</p>
     </div>
 
   </div>
@@ -55,7 +53,7 @@
 
     <ul class="ul-out">
       <li><a href="#preface">前言</a></li>
-      <li><a href="#audio-01-start">觀往知來臺語歌</a></li>
+      <li><a href="#year_scroll">觀往知來臺語歌</a></li>
       <li><a href="#audio-02-start">臺語歌手專訪</a>
         <ul class="ul-in">
           <li><a href="#adei">流氓阿德</a></li>
@@ -70,48 +68,97 @@
   <img id="nav_btn" src="navigation bar.png" alt="">
 
 
-  <!-- 前言 -->
-  <div id="preface" style="height: 400vh;">
-    <div class="preface-box-bg" style="background-color: #666; position:sticky; top: 0; height: 200vh;">
-      <div class="slideanimate preface-box " data-pos=1250 data-direction="fadeInUp2">
-        <img class="preface-img" style="float:right;" src="data-01.png" alt="">
-        <div class="preface-text">
-          <p style=" font-weight:700; font-size: 18px;   ">
-            臺語在聯合國教科文組織定義的瀕危語言六等級中，<br>
-            被列為第三級──「重大危險」，<br>
-            也就是祖父母會說,但不常對小孩使用，<br>
-            存在傳承的危機。</p>
-          <p style=" font-weight: 500; font-size: 16px;  ">
-            （註：「臺語」一詞如何使用仍是爭議，<br>
-            本篇文章中所稱之「臺語」乃指「台灣閩南語」，<br>
-            使用此一詞乃因目前社會大眾依舊普遍以「臺語」，<br>
-            這個詞來形容「臺灣閩南語」。）
-          </p>
-        </div>
-        
-      </div>
+  <!-- 講台語 -->
+<div style="height: 150vh;">
+  <div id="when_speaking_start" style="
+  position: sticky; top:0;
+  height: 100vh; width: 100vw; background-color: black; 
+  background-image: url(speaking.jpg); 
+  background-size: cover; 
+  background-position: 70% 80%; 
+  background-repeat: no-repeat;">
+    <div data-pos=150 data-direction="fadeInUp" style=" position: relative; left: 8vw; top: 30%;
+  font-family: 'Noto Serif TC', serif; color: white; font-weight: 500; font-size: 20px; width: 100%;">
+      <div style="font-weight: 700; font-size: 28px;">「你上一次講臺語，是什麼時候？」</div>
+      <div>Lí tíng-pái kóng tâi-gí, sī siánn-mih sî-tsūn</div>
 
     </div>
-
-    <div class="slideanimate" data-pos=2500 data-direction="fadeInUp2"
-      style="height: 100vh; background-color: #555; position:sticky; top: 0;">
-      <div class=" preface-box preface-box2">
-        <img class="preface-img preface-img2" style="float: left;" src="data-02.png" alt="">
-        <p class="preface-text preface-text2" style=" font-weight: 700; font-size: 18px; color: white; left: 2%; 
-        ">
-          2013年「家中最常說的語言」調查研究，<br>
-          年輕人(20-28歲)說臺語的比例僅剩22.3%，<br>
-          更不用說是2022年的現在，<br>
-          情況更為嚴峻。</p>
+    <audio id="when_speaking" src="tai_mp3/when_speaking.MP3"></audio>
+  </div>
+</div>
 
 
+  <!-- 前言 -->
+  <div id="preface" style="height: 400vh;">
+    <div class="bg d-flex align-items-center" style="position: sticky; top:0;">
+      <div class="slideanimate container col-lg-8" style="position: relative;" data-pos=1700 data-direction="fadeInUp">
+
+        <div class="row justify-content-center">
+          <div class="col-sm align-self-center">
+            <img class="img-fluid form1 " src="data-01.png" alt="">
+          </div>
+          <div class="col-sm">
+            <div class="pre-text" style="position: relative;top: 50%; transform: translateY(-50%); ">
+              <p style=" font-weight:700; font-size: 18px;  color: white; ">
+                臺語在聯合國教科文組織定義的瀕危語言六等級中，<br>
+                被列為第三級──「重大危險」，<br>
+                也就是祖父母會說,但不常對小孩使用，<br>
+                存在傳承的危機。</p>
+              <p style=" font-weight: 500; font-size: 16px;  color: white;">
+                （註：「臺語」一詞如何使用仍是爭議，<br>
+                本篇文章中所稱之「臺語」乃指「台灣閩南語」，<br>
+                使用此一詞乃因目前社會大眾依舊普遍以「臺語」，<br>
+                這個詞來形容「臺灣閩南語」。）
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="position: sticky; top:0;" class="bg d-flex align-items-center slideanimate" data-pos=2600
+      data-direction="fadeInUp2">
+      <div class="container col-lg-8">
+        <div class="row justify-content-center">
+          <div class="col-sm align-self-center">
+            <img class="img-fluid form2" src="data-02.png" alt="">
+          </div>
+          <div class="col-sm pre-text">
+            <p class="preface-text preface-text2" style=" font-weight: 700; font-size: 18px; color: white; left: 2%; ">
+              2013年「家中最常說的語言」調查研究，<br>
+              年輕人(20-28歲)說臺語的比例僅剩22.3%，<br>
+              更不用說是2022年的現在，<br>
+              情況更為嚴峻。</p>
+          </div>
+
+
+        </div>
       </div>
 
     </div>
   </div>
 
+  <!-- 漫畫 -->
+  <div class="comic-bg">
+    <div style="position: relative; left: 50%; top:50%; transform: translateX(-50%) translateY(-50%);">
+      <p class="col-8"
+        style="position: relative; left: 50%; transform: translateX(-50%);font-weight: 700; font-size: 18px; color: white; ">
+        在當前以華語為主要語言的臺灣社會，許多長輩為了和孩子溝通、拉近距離，會捨棄講臺語，選擇使用陌生、
+        不流利的華語。<br>「年輕人會聽不會講臺語」、「阿媽跟鄰居說臺語，轉頭跟孫子說華語」是普遍的現象。</p>
 
-  <div style="height: 400vh; background-color: #444;">
+      <div class="container col-lg-12">
+        <div class="row">
+          <div class="col-md align-self-center"><img class="img-fluid form3" src="comic-01.png" alt=""></div>
+          <div class="col-md align-self-center"><img class="img-fluid form3" src="comic-02.png" alt=""></div>
+          <div class="col-md align-self-center"><img class="img-fluid form3" src="comic-03.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div style="height: 400vh; width: 100vw; background-color: #444;">
     <div style="position: sticky; width: 100vw; height: 100vh; top: 0%;">
 
       <div class="preface-comic-box"
@@ -120,17 +167,17 @@
           在當前以華語為主要語言的臺灣社會，許多長輩為了和孩子溝通、拉近距離，會捨棄講臺語，選擇使用陌生、
           不流利的華語。<br>「年輕人會聽不會講臺語」、「阿媽跟鄰居說臺語，轉頭跟孫子說華語」是普遍的現象。</p>
 
-        <img class="slideanimate preface-comic" data-pos=4000 data-direction="fadeInUp" src="comic-01.jpg" alt="">
-        <img class="slideanimate preface-comic" data-pos=4500 data-direction="fadeInUp" src="comic-02.jpg" alt="">
-        <img class="slideanimate preface-comic" data-pos=5000 data-direction="fadeInUp" src="comic-03.jpg" alt="">
+        <img class="slideanimate preface-comic" data-pos=4000 data-direction="fadeInUp" src="comic-01.png" alt="">
+        <img class="slideanimate preface-comic" data-pos=4500 data-direction="fadeInUp" src="comic-02.png" alt="">
+        <img class="slideanimate preface-comic" data-pos=5000 data-direction="fadeInUp" src="comic-03.png" alt="">
 
 
       </div>
     </div>
-  </div>
+  </div> -->
 
 
-  <div style="height: 40vh; background-color: #333;">
+  <div style="height: 40vh; width: 100vw; background-color: #444;">
     <div style="position: relative; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
       <p style=" font-weight:700; font-size: 18px; color: white; 
         ">
@@ -139,23 +186,26 @@
 
   </div>
 
-  <div style="height: 20vh; background-color: rgb(221, 221, 221);">
+
+
+  <div id="audio-01-start" style="height: 25vh; width: 100vw; background-color: rgb(221, 221, 221);">
     <div style="position: relative; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
-      <p style="color: black; text-align: center;">背景音樂：純純－〈桃花泣血記〉<br>建議開啟聲音聆聽</p>
+      <p style="color: black; text-align: center;">背景音樂：純純－〈桃花泣血記〉<br>建議開啟聲音聆聽，按鈕可關閉音樂</p>
       <!-- <audio style=" height: 30px; position: relative; left: 50%; transform: translateX(-50%);" id="year_audio"
         src="year.mp3" loop="loop" controls controlslist="nodownload"></audio> -->
-      <audio style=" height: 30px; position: relative; left: 50%; transform: translateX(-50%);" id="year_audio"
+      <audio style=" height: 50px; position: relative; left: 50%; transform: translateX(-50%);" id="year_audio"
         src="year.mp3" loop="loop" controlslist="nodownload"></audio>
-      <div id="audio_btn" class="audio-play"
-        style="width: 30px; height: 30px; position: relative; left: 50%; transform: translateX(-50%);"></div>
+      <div id="audio_btn" class="audio-pause"
+        style="width: 50px; height: 50px; position: relative; left: 50%; transform: translateX(-50%);"></div>
 
     </div>
 
   </div>
 
-  <div id="audio-01-start" style="height: 100vh; overflow:hidden; position: relative;">
+  <div id="year_scroll" style="height: 100vh; width: 100vw; overflow:hidden; position: relative;">
     <video style="height: 120vh; position: relative; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);"
       autoplay muted loop src="turning.mp4"></video>
+      <audio id="history" src="tai_mp3/history.mp3"></audio>
 
 
     <p style="position: absolute; font-weight:700; font-size: 18px; color: white; 
@@ -179,7 +229,7 @@
 
 
       <!--     黑 -->
-      <img data-pos="2" class="img opa" src="year_img/bg_old-dark.png" alt=""
+      <img data-pos="2" class="img opa" src="year_img/bg_old-dark.jpg" alt=""
         style="z-index: -1;position:  sticky; top: 0px;width: 100vw; height: 100vh;">
 
 
@@ -187,7 +237,7 @@
       <!--   1925-1937 -->
       <div
         style="height: 200vh; background-image: url(year_img/1925-1937.jpg); 
-        background-attachment: fixed; background-size: 70%; background-repeat: no-repeat; background-position: -15% 50%;">
+        background-attachment: fixed; background-size: 65%; background-repeat: no-repeat; background-position: 0% 50%;">
         <div class="year-box" style=" position: relative; left: 70%; top: 50vh;">
           <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
             <circle cx=15 cy=15 r=5 style="fill: #c4c4c4;"></circle>
@@ -208,7 +258,7 @@
         style="height: 150vh; 
                     background-image: url(year_img/1932.jpg); 
                     
-                    background-attachment: fixed; background-size: 60%; background-repeat: no-repeat; background-position: 0% 50%;">
+                    background-attachment: fixed; background-size: 65%; background-repeat: no-repeat; background-position: 0% 50%;">
 
         <div class="year-box" style="position: relative; left: 70%; top: 50vh;">
           <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
@@ -230,8 +280,8 @@
           src="https://lh3.googleusercontent.com/hRsnmgEUsFhlUYa2SgHSKVk9kTnLLPk6nON2PsMSc-UVMmB-Qgk1t-B3WHhXJvbAo1umElV8l78J6MJXh1TD20Qq-4cN227NCMmIhrYK2T44vg1C4k6isbk_Owbdk35eyiNb__qneA=w2400"
           alt="">
         <!--   1940-1950 -->
-        <div
-          style="height: 150vh; background-image: url(year_img/1940-1950.jpg); background-attachment: fixed; background-size: 70%; background-repeat: no-repeat; background-position: -10% 50%;">
+        <div id="audio-01-pause"
+          style="height: 150vh; background-image: url(year_img/1940-1950.jpg); background-attachment: fixed; background-size: 65%; background-repeat: no-repeat; background-position: 0% 50%;">
 
           <div class="year-box" style="position: relative; left: 70%; top: 50vh;">
             <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
@@ -248,7 +298,7 @@
 
         <!--   1949 -->
         <div
-          style="height: 150vh; background-image: url(year_img/1949.jpg); background-attachment: fixed; background-size: 60%; background-repeat: no-repeat; background-position: 0% 50%;">
+          style="height: 150vh; background-image: url(year_img/1949.jpg); background-attachment: fixed; background-size: 65%; background-repeat: no-repeat; background-position: 0% 50%;">
           <div class="year-box" style="position: relative; left: 70%; top: 50vh;">
             <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
               <circle cx=15 cy=15 r=5 style="fill: #c4c4c4;"></circle>
@@ -265,7 +315,7 @@
 
         <!--   1976 -->
         <div
-          style="height: 150vh; background-image: url(year_img/1976.jpg); background-attachment: fixed; background-size: 55%; background-repeat: no-repeat; background-position: 0% 50%;">
+          style="height: 150vh; background-image: url(year_img/1976.jpg); background-attachment: fixed; background-size: 65%; background-repeat: no-repeat; background-position: 0% 50%;">
           <div class="year-box" style="position: relative; left: 70%; top: 50vh;">
             <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
               <circle cx=15 cy=15 r=5 style="fill: #c4c4c4;"></circle>
@@ -285,14 +335,12 @@
 
       <!--   1987 -->
       <div id="audio-01-restart" style="height: 150vh; 
-                    background-image: url(year_img/1987-1.jpg),
-                                      url(year_img/1987-2.JPG); 
+                    background-image: url(year_img/1987.jpg);
+                                      
                     background-attachment: fixed; 
-                    background-size: 25%,
-                                     40%; 
+                    background-size: 65%; 
                     background-repeat: no-repeat; 
-                    background-position: 55% 75%,
-                                         0% 20%;">
+                    background-position: 0% 50%;">
         <div class="year-box" style="position: relative; left: 70%; top: 50vh;">
           <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
             <circle cx=15 cy=15 r=5 style="fill: #c4c4c4;"></circle>
@@ -311,7 +359,7 @@
       <div
         style="height: 150vh; 
                     background-image: url(year_img/1989.jpg); 
-                    background-attachment: fixed; background-size: 35%; background-repeat: no-repeat; background-position: 20% 50%;">
+                    background-attachment: fixed; background-size: 65%; background-repeat: no-repeat; background-position: 0% 50%;">
         <div class="year-box" style="position: relative; left: 70%; top: 50vh;">
           <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
             <circle cx=15 cy=15 r=5 style="fill: #444;"></circle>
@@ -329,7 +377,7 @@
       <div
         style="height: 150vh; 
                     background-image: url(year_img/1990.jpg); 
-                    background-attachment: fixed; background-size: 35%; background-repeat: no-repeat; background-position: 20% 50%;">
+                    background-attachment: fixed; background-size: 65%; background-repeat: no-repeat; background-position: 0% 50%;">
         <div class="year-box" style="position: relative; left: 70%; top: 50vh;">
           <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
             <circle cx=15 cy=15 r=5 style="fill: #444;"></circle>
@@ -347,7 +395,7 @@
       <div
         style="height: 150vh; 
                     background-image: url(year_img/1990-2000.jpg); 
-                    background-attachment: fixed; background-size: 35%; background-repeat: no-repeat; background-position: 20% 50%;">
+                    background-attachment: fixed; background-size: 65%; background-repeat: no-repeat; background-position: 0% 50%;">
         <div class="year-box" style="position: relative; left: 70%; top: 50vh;">
           <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
             <circle cx=15 cy=15 r=5 style="fill: #444;"></circle>
@@ -365,7 +413,7 @@
       <div
         style="height: 150vh; 
                     background-image: url(year_img/2000-2010.jpg); 
-                    background-attachment: fixed; background-size: 70%; background-repeat: no-repeat; background-position: -20% 50%;">
+                    background-attachment: fixed; background-size: 65%; background-repeat: no-repeat; background-position: 0% 50%;">
         <div class="year-box" style="position: relative; left: 70%; top: 50vh;">
           <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
             <circle cx=15 cy=15 r=5 style="fill: #444;"></circle>
@@ -383,7 +431,7 @@
       <div
         style="height: 150vh; 
                     background-image: url(year_img/2010.jpg); 
-                    background-attachment: fixed; background-size: 70%; background-repeat: no-repeat; background-position: -20% 50%;">
+                    background-attachment: fixed; background-size: 65%; background-repeat: no-repeat; background-position: 0% 50%;">
         <div class="year-box" style="position: relative; left: 70%; top: 50vh;">
           <svg style="position: absolute; height: 30px; width: 30px; right: -20px; top: 10px;">
             <circle cx=15 cy=15 r=5 style="fill: #444;"></circle>
@@ -400,21 +448,21 @@
   </div>
 
 
-  <div id="audio-01-end" style="height: 20vh; background-color: rgb(221, 221, 221);">
+  <div id="audio-01-end" style="height: 25vh; width: 100vw; background-color: rgb(221, 221, 221);">
     <div style="position: relative; width: 65vw; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
-      <p style="color: black; text-align: center;">背景音樂：拍謝少年－〈歹勢中年〉<br>建議開啟聲音聆聽</p>
+      <p style="color: black; text-align: center;">背景音樂：拍謝少年－〈歹勢中年〉<br>建議開啟聲音聆聽，按鈕可關閉音樂</p>
       <audio id="paisei_audio" src="paisei_song.mp3" loop="loop"></audio>
       <!-- <audio style="height: 30px; position: relative; left: 50%; transform: translateX(-50%);" src="paisei_song.mp3"
         loop="loop" controls controlslist="nodownload"></audio> -->
-      <div id="audio_btn2" class="audio-play"
-        style="width: 30px; height: 30px; position: relative; left: 50%; transform: translateX(-50%);"></div>
+      <div id="audio_btn2" class="audio-pause"
+        style="width: 50px; height: 50px; position: relative; left: 50%; transform: translateX(-50%);"></div>
 
     </div>
 
   </div>
 
   <div id="audio-02-start"
-    style="height: 100vh; background-image: url(sing.jpg); background-size: cover; background-position: center;">
+    style="height: 100vh; width: 100vw; background-image: url(sing.jpg); background-size: cover; background-position: center;">
 
     <div id="music-box" style="position: relative;  left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);">
 
@@ -435,13 +483,12 @@
     </div>
   </div>
 
-
   <!-- 阿德 -->
-  <div id="adei" style="height: 100vh; background-color: #646464; position: relative;">
+  <div id="adei" style="height: 100vh; width: 100vw; background-color: #343434; position: relative;">
     <img style="margin-left: 20px;width: 60%; float: right; position: relative; top: 10%; transform:translateY(-10%);"
       src="adei-cover.jpg" alt="">
     <div style="position: relative; margin: 0 5%;top: 50%; transform:translateY(-50%);">
-      <h1 class="card-title">
+      <h1 class="card-title" style="color: #D6D6D6;">
         流氓阿德</h1>
 
       <!--   <img style="width: 10%; position: relative; left: 20%; top: 10%; "src="https://lh3.googleusercontent.com/P3LyCkn6pvfuDWPR1iOMOekCeKwjY3QVqlduBpddCkS0xhVT7tJ2y99oNV9xQt9T6HIJfHZHdMhvHXRuEriUrDDBmdck_LLtTo1Am4-xQ2ktvlJrEPFvicRfVXam_BB-RGO8Zgi_yQ=w2400" alt=""> -->
@@ -451,9 +498,8 @@
       <p class="card-quote" style="font-size: 14px; margin-top: -10px; opacity: 0.8;">Sú-iōng Tâi-gí tshòng-tsok，guá
         ē-tàng tián-hiān pí Huâ-gí tióng kuí pah-puē ê tsîng-kám。</p>
       <p style="text-align: center;">
-        <audio id="adei_speaking"
-        style=" position: relative; height: 25px; width: 250px;"
-        src="adei_speaking.mp3" controlslist="nodownload" controls></audio>
+        <audio id="adei_speaking" style=" position: relative; height: 25px; width: 250px;" src="adei_speaking.mp3"
+          controlslist="nodownload" controls></audio>
       </p>
 
       <p
@@ -474,7 +520,7 @@
   </div>
 
   <!-- 富凱 -->
-  <div id="fukai" style="height: 100vh; background-color: #343434; position: relative;">
+  <div id="fukai" style="height: 100vh; width: 100vw; background-color: #343434; position: relative;">
     <img style="margin-right: 20px;width: 60%; float: left; position: relative; top: 10%; transform:translateY(-10%);"
       src="fukai-cover.jpg" alt="">
     <div style="position: relative; margin: 0 5%;top: 50%; transform:translateY(-50%);">
@@ -484,9 +530,9 @@
       <p class="card-quote">
         「沒有舊的，哪會有新的。」</p>
       <p class="card-quote" style="font-size: 14px; margin-top: -10px;opacity: 0.8;">Bô kū ê，ná-ū sin ê 。</p>
-        <p style="text-align:center;">
-      <audio id="fukai_speaking" style="height: 25px; width: 250px; position: relative;"
-        src="fukai_speaking.mp3" controls controlslist="nodownload"></audio></p>
+      <p style="text-align:center;">
+        <audio id="fukai_speaking" style="height: 25px; width: 250px; position: relative;" src="fukai_speaking.mp3"
+          controls controlslist="nodownload"></audio></p>
       <p style="
     color: #fff; font-size: 16px; font-family: 'Noto Serif TC', serif; font-weight: 500; ">
         從小開始學唱歌，2004年參與八大電視《亞洲新人歌唱大賽》，獲得年度總冠軍。出道十年，連續七度入圍金曲獎，並在2021年以專輯《拾歌》奪得第32屆金曲最佳臺語男歌手獎。<br><br>
@@ -503,21 +549,21 @@
   </div>
 
   <!-- 拍謝 -->
-  <div id="paisei" style="height: 100vh; background-color: #646464; position: relative;">
-    <img style="margin-left: 10px;width: 65%; float: right; position: relative; top: 15%; transform:translateY(-10%);"
+  <div id="paisei" style="height: 100vh; width: 100vw; background-color: #343434; position: relative;">
+    <img style="margin-left: 10px;width: 65%; float: right; position: relative; top: 10%; transform:translateY(-10%);"
       src="https://lh3.googleusercontent.com/OIXJcNbmWSYmggC-7UKR87ybjdlTCDtcODRVdbe6QkF7qNPfZJNWwluz8Va5JEoJa6DlpWKoxKbqws2ZabuXUaS9NX5UqksQX9UIG7MTGUb7hkj_KgbnHom82nHtEnvYmUpV-fsmVQ=w2400"
       alt="">
 
     <div style="position: relative; margin: 0 5%;top: 50%; transform:translateY(-50%);">
-      <h1 class="card-title">拍謝少年</h1>
+      <h1 class="card-title" style="color: #D6D6D6;">拍謝少年</h1>
 
       <p class="card-quote">
         「臺語是跟我們最親近的語言。」</p>
       <p class="card-quote" style="font-size: 14px; margin-top: -10px;opacity: 0.8;">Tâi-gí sī kā gúnt siōng tshin-kīn ê
         gí-giân。</p>
-        <p style="text-align:center;">
-      <audio id="paisei_speaking" style=" position: relative; height: 25px; width: 250px;"
-        src="paisei_speaking.mp3" controls controlslist="nodownload"></audio></p>
+      <p style="text-align:center;">
+        <audio id="paisei_speaking" style=" position: relative; height: 25px; width: 250px;" src="paisei_speaking.mp3"
+          controls controlslist="nodownload"></audio></p>
       <p style="
       color: #fff; font-size: 16px; font-family: 'Noto Serif TC', serif; font-weight: 500; ">
         拍謝少年，是2022年元旦登上總統府舞臺的天團。除了這樣高規格的舞臺，他們的表演場域也可以在住家陽臺上、廟口前、火鍋店內、漁村裡。然而不論表演的場域在哪裡，不變的是他們鮮明的臺語搖滾標誌。<br><br>
@@ -536,12 +582,12 @@
 
   <!-- 陳峙維 -->
   <div id="teacher" class="section"
-    style="height: 100vh; overflow:hidden; position: relative; background-image: url(chen-01.JPG);">
+    style="height: 100vh; width: 100vw; overflow:hidden; position: relative; background-image: url(chen-01.JPG);">
     <div style="position: absolute; height: 100vh; width: 100vw; background-color: rgba(0,0,0,0.5);"></div>
     <div class="teacher-card-text">
       「對現在許多臺語歌創作者來說，臺語並非是生活中必要的一部份，
       但他或許將創作臺語歌曲當成一種鄉愁或身分認同的展現。」
-      <div class="teacher-card-text2" >Tuì tsit-má tsiânn-tsuē Tâi-gí kua
+      <div class="teacher-card-text2">Tuì tsit-má tsiânn-tsuē Tâi-gí kua
         tshòng-tsok jîn lâi kóng，Tâi-gí kî-si̍t m̄ sī sing-ua̍h tiong pit-iàu ê tsi̍t pōo-hūn，iáu-m̄-koh i huān-sè kā
         tshòng-tsok Tâi-gí kua tòng-tsò tsi̍t tsióng hiong-tshiû ia̍h-sī sin-hūn jīm-tông ê tián-hiān。
       </div><br><br>
@@ -573,26 +619,31 @@
     </p>
   </div>
 
-
+<div style="height: 200vh;">
   <div id="ending" class="section"
-    style="height: 100vh; background-color: rgb(41, 41, 41);position: relative; background-image: url(ending.jpg);">
+    style="position: sticky; top: 0;height: 100vh; width: 100vw; background-color: rgb(41, 41, 41);background-image: url(ending.jpg);">
     <h1 class="ending-h1">若臺語消失的那天來臨，<br>
-      <span style="font-size: 18px; position: relative; top:-15px; font-weight: 600; opacity: 0.8;">Nā-sī Tâi-gí bô--khì ê hit-kang lâi-kàu，</span><br>
+      <span style="font-size: 18px; position: relative; top:-15px; font-weight: 600; opacity: 0.8;">Nā-sī Tâi-gí bô--khì
+        ê hit-kang lâi-kàu，</span><br>
 
       某部分的臺灣也將死去。<br>
       <span style="font-size: 18px; position: relative; top:-15px; font-weight: 600;  opacity: 0.8;">tsi̍t pōo-hūn ê
         Tâi-uân iā tsiong sí--khì。
       </span>
     </h1>
+    <audio id="dying" src="tai_mp3/dying.mp3"></audio>
+    
   </div>
+</div>
 
-  <div style="height: 100vh;position: relative; overflow:hidden; background-color: #000;">
+  <div id="sunrise" style="height: 100vh; width: 100vw;position: relative; overflow:hidden; background-color: #000;">
     <video style="height: 120vh; position: absolute; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);"
       autoplay muted loop src="sunrise.mp4"></video>
     <div id="ending-text">
       世界音樂的趨勢蓬勃發展，被壓迫的歷史無法重來，在這個人人強調要做自己卻又容易被同化的年代，臺語歌的創作之路不會簡單。<br>
-      <div class="ending-tai" >Sè-kài im-ga̍k phông-pu̍t huat-tián，hōo ap-pik ê li̍k-sú bē-sái
-        tîng-thâu-lâi，tī tsit-ê lâng-lâng kiông-tiāu tsò ka-tī suah iū-koh tsin kán-tan hōo tông-huà ê nî-tāi， tshòng-tsok
+      <div class="ending-tai">Sè-kài im-ga̍k phông-pu̍t huat-tián，hōo ap-pik ê li̍k-sú bē-sái
+        tîng-thâu-lâi，tī tsit-ê lâng-lâng kiông-tiāu tsò ka-tī suah iū-koh tsin kán-tan hōo tông-huà ê nî-tāi，
+        tshòng-tsok
         Tâi-gí kua ê lōo bē kán-tan。</div>
       <br>
       所謂危機就是轉機，對於臺語的未來，我們還是抱著滿心期待。<br>
@@ -600,6 +651,7 @@
         muá-sim kî-thāi。
 
       </div>
+      <audio id="ending_speaking" src="tai_mp3/ending_speaking.mp3"></audio>
     </div>
     <p style="position: absolute; text-align: center; color:white; font-size: 12px; font-weight: 500; 
     bottom:0px; left: 50%; transform: translateX(-50%);">
@@ -648,6 +700,13 @@
       var speaking2 = document.getElementById("fukai_speaking");
       var speaking3 = document.getElementById("paisei_speaking");
 
+      var rain = document.getElementById("rain");
+      var heading_speaking = document.getElementById("heading_speaking");
+      var when_speaking = document.getElementById("when_speaking");
+      var history = document.getElementById("history");
+      var dying = document.getElementById("dying");
+      var ending_speaking = document.getElementById("ending_speaking");
+
       $("#nav_btn").click(function () {
         $('#navigation').toggle(1000);
       });
@@ -675,23 +734,104 @@
         }
       });
 
-      speaking1.onplay = function(){
+      speaking1.onplay = function () {
         music2.pause();
       }
-      speaking2.onplay = function(){
+      speaking2.onplay = function () {
         music2.pause();
       }
-      speaking3.onplay = function(){
+      speaking3.onplay = function () {
         music2.pause();
       }
 
       $(window).scroll(function () {
         var scrolled = $(window).scrollTop();
-
-        if (scrolled + winh > $("#audio-01-end").offset().top) {
+        if ($("#audio_btn").hasClass("audio-play")) {
           music.pause();
-          $("#audio_btn").removeClass("audio-play").addClass("audio-pause");
+        } else {
+          if (scrolled + winh > $("#audio-01-start").offset().top && scrolled + winh <= $("#audio-01-pause")
+            .offset().top) {
+            music.play();
+          }
+          if (scrolled + 0.2 * winh < $("#audio-01-start").offset().top) {
+            music.pause();
+          }
+
+          if (scrolled + winh > $("#audio-01-pause").offset().top &&
+            scrolled + winh <= $("#audio-01-restart").offset().top) {
+            music.pause();
+          }
+          if (scrolled + winh > $("#audio-01-restart").offset().top && scrolled + winh <= $("#audio-01-end")
+            .offset().top) {
+            music.play();
+          }
+          if (scrolled + winh > $("#audio-01-end").offset().top) {
+            music.pause();
+          }
+
         }
+
+        if ($("#audio_btn2").hasClass("audio-play")) {
+          music2.pause();
+        } else {
+          if (scrolled + winh > $("#audio-02-start").offset().top) {
+            music2.play();
+            // $("#audio_btn").removeClass("audio-play").addClass("audio-pause");
+          }
+
+
+          if (scrolled + 0.5 * winh < $("#audio-02-start").offset().top) {
+            music2.pause();
+          }
+
+        }
+
+        // 你上次說台語
+        if (scrolled + 0.2*winh > $("#when_speaking_start").offset().top &&
+          scrolled + 0.5*winh <= $("#preface").offset().top) {
+          when_speaking.play();
+        }else{
+          when_speaking.pause();
+        }
+        // 開頭
+        if (scrolled + 0.5*winh > $("#when_speaking_start").offset().top ) {
+          heading_speaking.pause();
+        }else{
+          heading_speaking.play();
+        }
+        // 雨聲
+        if (scrolled + 0.5*winh > $("#audio-01-start").offset().top ) {
+          rain.pause();
+        }else{
+          rain.play();
+        }
+        // 歷史前
+        if (scrolled - 0.1*winh > $("#audio-01-start").offset().top &&
+          scrolled <= $("#year").offset().top) {
+          history.play();
+        }else{
+          history.pause();
+        }
+        // 死去
+        if (scrolled + 0.2*winh > $("#ending").offset().top &&
+          scrolled + 0.7*winh <= $("#sunrise").offset().top) {
+          dying.play();
+          
+        }else{
+          dying.pause();
+        }
+        // 結尾
+        if (scrolled + 0.2*winh > $("#sunrise").offset().top ) {
+          ending_speaking.play();
+        }else{
+          ending_speaking.pause();
+        }
+        
+
+
+
+
+
 
         // 動態畫重點
         $(".spot").each(function () {

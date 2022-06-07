@@ -25,7 +25,9 @@
 
 </div>
 
-
+<audio id="article_bgm" style="position: fixed; top: 0; left:0;" src="tai_mp3/article.mp3" loop autoplay></audio>
+<div id="audio_btn" class="audio-pause"
+    style="position: fixed; top: 10px; left:15px; width: 50px; height: 50px; opacity: 0.5;"></div>
 
 
 
@@ -71,7 +73,7 @@
     當時南部一個星期會有約三場歌唱比賽，許富凱在學校下課之後，就必須準備裝扮到處去征戰，同期的郭婷筠、曾瑋中，都是當時一起參加歌唱比賽的的夥伴。以前家裡的電視機、洗衣機都是許富凱歌唱比賽贏來的，家裡最高峰時期有六、七臺腳踏車，還有很多的毛巾跟資生堂肥皂。
 </p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3pkqWFAaShs" title="YouTube video player"
+<iframe height="315" style="width: 100vw;" src="https://www.youtube.com/embed/3pkqWFAaShs" title="YouTube video player"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
 
@@ -109,12 +111,14 @@
         Star》的製作人黃義雄（寇桑）常來看他，當時寇桑極力在推動臺語歌，「這也是我為什麼後來一直唱臺語歌，一部分就是受他影響。」許富凱說道，對於當時才23歲的他，寇桑是恩師、生命中的貴人，會一直耳提面命，告訴他要把臺語歌傳承下去。
     </p>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/M5OZqEH-nNI" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    <iframe height="315" style="width: 100vw;" src="https://www.youtube.com/embed/M5OZqEH-nNI"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
 
     <div class="p article-title">再五十年這些歌就會不見 推出全翻唱專輯
-        <div class="article-title-tai">Koh gōo-tsa̍p nî tsia ê kua tio̍h ē bô-khì，thui-tshut tsuân-sin Tâi-gí kua tsuan-tsip
+        <div class="article-title-tai">Koh gōo-tsa̍p nî tsia ê kua tio̍h ē bô-khì，thui-tshut tsuân-sin Tâi-gí kua
+            tsuan-tsip
 
         </div>
     </div>
@@ -138,7 +142,7 @@
     </div>
     <p class="p" style="font-size: 16px;">首次登上小巨蛋，幾乎座無虛席，可以看見許富凱的好歌藝及影響力。圖片來源／黃湄津攝</p>
     <div class="p article-title">老東西有老靈魂　讓臺語歌成為日常
-        <div class="article-title-tai">Kóo-tsá  ê mi̍h-kiānn ū kóo-tsá  ê lîng-hûn，hōo Tâi-gí kua sîng-uî ji̍t-siông
+        <div class="article-title-tai">Kóo-tsá ê mi̍h-kiānn ū kóo-tsá ê lîng-hûn，hōo Tâi-gí kua sîng-uî ji̍t-siông
 
         </div>
     </div>
@@ -158,8 +162,8 @@
 
     <p class="p">許富凱要讓那些充滿靈魂、美好的臺語歌，重新地被大眾聽到、被大眾喜歡，如此一來，不僅讓臺語歌的生命更延長，也讓臺語持續地流動在日常的生活裡。</p>
 
-    <audio style="left: 50%; transform: translateX(-50%); position: relative;" src="fukai_speaking.mp3"
-        controls></audio>
+    <audio style="left: 50%; transform: translateX(-50%); position: relative;" src="fukai_speaking.mp3" controls
+        controlslist="nodownload"></audio>
     <p class="p" style="font-weight: 700; text-align: center;">許富凱為什麼要翻唱？他這樣說......</p>
 
 
@@ -200,6 +204,17 @@
     <script>
         $(function () {
             var scrollable = $("#outer").height() * 2 / 3;
+            var music = document.getElementById("article_bgm");
+
+            $("#audio_btn").click(function () {
+                if ($(this).hasClass("audio-play")) {
+                    $("#audio_btn").removeClass("audio-play").addClass("audio-pause");
+                    music.play();
+                } else {
+                    music.pause();
+                    $("#audio_btn").removeClass("audio-pause").addClass("audio-play");
+                }
+            });
             $(window).scroll(function () {
                 var scrolled = $(window).scrollTop();
                 $(".opa").each(function () {

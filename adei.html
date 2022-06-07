@@ -24,6 +24,9 @@
 
 </div>
 
+<audio id="article_bgm" style="position: fixed; top: 0; left:0;" src="tai_mp3/article.mp3" loop autoplay></audio>
+<div id="audio_btn" class="audio-pause"
+        style="position: fixed; top: 10px; left:15px; width: 50px; height: 50px; opacity: 0.5;"></div>
 <div style="background: rgba(0,0,0,0.2); border: solid rgba(0,0,0,0); ">
     <p class="p">
         戴著帽子、及肩的長髮、搭配一身輕便的帽踢和黑框眼鏡，杭州南路的咖啡廳櫃臺正對面的位子，流氓阿德好早就坐在那，手中捧著書本沈思，很難想像這是曾在搖滾樂舞臺上吶喊、衝撞的「流氓」。</p>
@@ -33,7 +36,7 @@
     </p>
 </div>
 
-<iframe width="560" height="315" style="margin-top: 20px;" src="https://www.youtube.com/embed/tRIBIJzx-5U"
+<iframe height="315" style="width: 100vw; margin-top: 20px;" src="https://www.youtube.com/embed/tRIBIJzx-5U"
     title="YouTube video player" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
@@ -105,7 +108,7 @@
     「語言畢竟是人創造的。」雖然也曾遭到一些批評、指教，流氓阿德堅持必須要屏棄舊時候的臺語使用方式，去創造一條自己覺得會讓臺語更美、更與時俱進的路，並且讓世界看到更寬廣的臺語樣態。
 </p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q3Wl4qzydE8" title="YouTube video player"
+<iframe height="315" style="width: 100vw;" src="https://www.youtube.com/embed/q3Wl4qzydE8" title="YouTube video player"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
 
@@ -157,7 +160,7 @@
     「明年我就（出道）三十年了，不曉得還能唱多久，就走一步算一步。」流氓阿德也經歷過大部份玩音樂的人會遇到的困難，三十歲的時候沒賺錢，本來只是想要結婚、生小孩，看過很多樂團的主唱，壓力很大後來就放棄了，但是「走到現在覺得自己能走過三十年，不簡單。」
 </p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/g5csrk0u2Ko" title="YouTube video player"
+<iframe height="315" style="width: 100vw;" src="https://www.youtube.com/embed/g5csrk0u2Ko" title="YouTube video player"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
 
@@ -168,7 +171,7 @@
 <p class="p">「有也好，沒也罷，盡力就好。所謂的夢想，那是一種生活的態度，但是最重要的就是，不要做自己也討厭的那種大人。」
 </p>
 
-<audio style="left: 50%; transform: translateX(-50%); position: relative;" src="adei_speaking.mp3" controls></audio>
+<audio style="left: 50%; transform: translateX(-50%); position: relative;" src="adei_speaking.mp3" controls controlslist="nodownload"></audio>
 <p class="p" style="font-weight: 700; text-align: center;">流氓阿德這樣說......</p>
 
 
@@ -212,6 +215,17 @@
 <script>
   $(function () {
     var scrollable = $("#outer").height() * 2 / 3;
+    var music = document.getElementById("article_bgm");
+
+    $("#audio_btn").click(function () {
+        if ($(this).hasClass("audio-play")) {
+          $("#audio_btn").removeClass("audio-play").addClass("audio-pause");
+          music.play();
+        } else {
+          music.pause();
+          $("#audio_btn").removeClass("audio-pause").addClass("audio-play");
+        }
+      });
     $(window).scroll(function () {
       var scrolled = $(window).scrollTop();
       $(".opa").each(function () {
@@ -219,6 +233,8 @@
         // 設定data-pos變數，讓第一層的數字先減完變透明，第二層在第一層消失時剛好透明度為1
         console.log(scrollable, scrolled);
       });
+
+    
 
     })
   });

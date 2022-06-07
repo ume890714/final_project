@@ -137,6 +137,20 @@
 
     }
 
+    .form1{
+      
+      position: relative; left: 50%; transform: translateX(-50%);
+    }
+    .form2{
+      width: 400px;position: relative; left: 50%; transform: translateX(-50%);
+    }
+    .form3{
+      position: relative; left: 50%; transform: translateX(-50%);
+    }
+    .comic-bg{
+      height: 100vh; width: 100vw; background-color: #444;
+    }
+
     .h1 {
       color: white;
       padding: 50px;
@@ -268,7 +282,7 @@
       transform: translateY(-50%);
     }
 
-    .preface-comic-box {
+    /* .preface-comic-box {
       height: 80vh;
       width: 65vw;
     }
@@ -280,7 +294,7 @@
       bottom: 0px;
       transform: translateX(-50%);
       background-color: white;
-    }
+    } */
 
     .year-box {
       width: 20vw;
@@ -346,7 +360,7 @@
 
 
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 720px) {
       .p {
         width: 80%;
       }
@@ -510,19 +524,28 @@
 
       
     }
-    @media screen and (max-width: 550px){
-      .preface-text {
-        clear: right;
-        bottom: 45%;
-      }
-      .preface-text2 {
-        clear: left;
-        top: -40%;
-        transform: translateY(50%);
-      }
+    @media screen and (max-width: 576px){
+      
       #nav_btn{
         width: 30px;
+
       }
+      .form1{
+        width: 70%;
+      }
+      .form2{
+        width:  75%;
+      }
+      .form3{
+        width: 60%;
+      }
+      .comic-bg{
+        height: 150vh;
+      }
+      .pre-text{
+        text-align: center;
+      }
+      
     }
     @media screen and (max-width: 400px){
       .preface-text {
@@ -537,6 +560,7 @@
       #teacher-text{
         height: 475vh;
       }
+     
     }
 
 
@@ -674,13 +698,19 @@
     /* 聲音按鈕 */
 
     .audio-pause {
-      background-image: url(../audio_pause.png);
+      background-image: url(../audio_play.png);
       background-size: contain;
       cursor: pointer;
     }
 
     .audio-play {
-      background-image: url(../audio_play.png);
+      background-image: url(../audio_pause.png);
       background-size: contain;
       cursor: pointer;
+    }
+
+    .bg{
+      height: 100vh;
+  width: 100vw;
+  background-color: #444;
     }

@@ -26,6 +26,10 @@
 
 </div>
 
+<audio id="article_bgm" style="position: fixed; top: 0; left:0;" src="tai_mp3/article.mp3" loop autoplay></audio>
+<div id="audio_btn" class="audio-pause"
+    style="position: fixed; top: 10px; left:15px; width: 50px; height: 50px; opacity: 0.5;"></div>
+
 
 <div style="background: rgba(0,0,0,0.2); border: solid rgba(0,0,0,0); ">
   <p class="p">
@@ -47,7 +51,7 @@
   拍謝少年的專輯產量不高，十多年來也就只有三張，分別是2012年的《海口味》、2017年的《兄弟沒夢不應該》及2020年的《歹勢好勢》。但量少質精，後兩張專輯分別拿下了第九屆及第十二屆金音獎的「最佳搖滾專輯獎」，在獨立樂團界是非常榮耀的肯定。
 </p>
 
-<iframe style="margin-top: 50px;" src="https://www.youtube.com/embed/IQoXh8eaOHo" title="YouTube video player"
+<iframe style="margin-top: 50px; width: 100vw;" src="https://www.youtube.com/embed/IQoXh8eaOHo" title="YouTube video player"
   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen></iframe>
 
@@ -67,7 +71,7 @@
   「一開始我們其實比較偏演奏型的樂團，但因為我們只有三個人，樂團的編制也不可能太大，後來就想說那好像嘴巴也可以動一下。」薑薑回憶起那段年少時的無心插柳後說道。於是他們開始試著在樂曲中加入人聲，而維尼發現，用臺語寫歌其實比較簡單，因為相較起華語，臺語共有八個聲調，「有時候想到歌詞，那個旋律自然而然就會在，對我來說比較自然。」維尼透漏了這個創作上的小心得。
 </p>
 
-<iframe src="https://www.youtube.com/embed/ikdxgMSdnkM" title="YouTube video player" frameborder="0"
+<iframe style="width: 100vw;" src="https://www.youtube.com/embed/ikdxgMSdnkM" title="YouTube video player" frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen></iframe>
 
@@ -118,7 +122,7 @@
 <p class="p">「我們的過去影響了我們現在正在做的事情，並且也會影響我們的未來。」維尼這麼描述著，一路走來的堅持是為何而在。「我們是很認真在臺灣演出的一個樂團，玩團對我們來說不只是經濟生活上的支持，否則我們不會堅持初衷到現在。」
 </p>
 
-<iframe src="https://www.youtube.com/embed/dupkKrTAgZo" title="YouTube video player" frameborder="0"
+<iframe style="width: 100vw;" src="https://www.youtube.com/embed/dupkKrTAgZo" title="YouTube video player" frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen></iframe>
 
@@ -130,7 +134,7 @@
 
 <p class="p">「這就是我們能夠做的。」他們最後這麼說。</p>
 
-<audio style="left: 50%; transform: translateX(-50%); position: relative;" src="paisei_speaking.mp3" controls></audio>
+<audio style="left: 50%; transform: translateX(-50%); position: relative;" src="paisei_speaking.mp3" controls controlslist="nodownload"></audio>
 <p class="p" style="font-weight: 700; text-align: center;">聽聽拍謝少年的憂愁......</p>
 
 
@@ -173,6 +177,15 @@
 <script>
   $(function () {
     var scrollable = $("#outer").height() * 2 / 3;
+    $("#audio_btn").click(function () {
+                if ($(this).hasClass("audio-play")) {
+                    $("#audio_btn").removeClass("audio-play").addClass("audio-pause");
+                    music.play();
+                } else {
+                    music.pause();
+                    $("#audio_btn").removeClass("audio-pause").addClass("audio-play");
+                }
+            });
     $(window).scroll(function () {
       var scrolled = $(window).scrollTop();
       $(".opa").each(function () {
