@@ -21,7 +21,8 @@
 <body>
   <!-- 標題 -->
 
-
+  <audio id="heading_speaking" src="heading.mp3" preload="auto"></audio>
+  <audio id="rain" src="rain.mp3" loop preload="auto"></audio>
   <div style="height: 200vh; position: relative;">
     <div style="position: sticky; top: 0%; height: 100vh; width: 100vw; background: #000;">
       <video autoplay muted loop style="position: absolute; left: 0; top: 0; width: 100vw; height: 100vh;"
@@ -37,9 +38,22 @@
        text-align: left; opacity: 0.8;">Tī siōng hó iā siōng-phái ê sî-tāi，tshiùnn-tshut Tâi-gí ê bī-lâi</p>
         <p style="font-family: 'Noto Serif TC', serif; color: #c4c4c4; font-weight: 500; font-size: 14px;
        text-align: left; ">最後更新日期於2022年4月22日</p>
+
+
       </div>
-      <audio id="heading_speaking" src="heading.mp3" preload="auto"></audio>
-      <audio id="rain" src="rain.mp3" loop preload="auto"></audio>
+
+      <div class="slideanimate align-self-center" data-pos=100 data-direction="fadeInUp"
+        style="position: absolute; top: 60%; width: 100%; height: 20vh; background-color: rgba(255, 255, 255, 0.2); padding: 10px;">
+        
+          <p style=" font-family: 'Noto Serif TC', serif; color: #ececec; font-weight: 500; font-size: 20px;
+      text-align: center; ">本網頁專題使用聲音素材，建議點選下方按鈕開啟聲音</p>
+          <div id="audio_btn3" class="audio-play" style="width: 50px; height: 50px; position: relative; left: 50%; transform: translateX(-50%);
+      filter: invert(74%) sepia(40%) saturate(1%) hue-rotate(29deg) brightness(103%) contrast(97%);"></div>
+
+        
+      </div>
+
+
 
     </div>
 
@@ -69,23 +83,23 @@
 
 
   <!-- 講台語 -->
-<div style="height: 150vh;">
-  <div id="when_speaking_start" style="
+  <div style="height: 150vh;">
+    <div id="when_speaking_start" style="
   position: sticky; top:0;
   height: 100vh; width: 100vw; background-color: black; 
   background-image: url(speaking.jpg); 
   background-size: cover; 
   background-position: 70% 80%; 
   background-repeat: no-repeat;">
-    <div data-pos=150 data-direction="fadeInUp" style=" position: relative; left: 8vw; top: 30%;
+      <div data-pos=150 data-direction="fadeInUp" style=" position: relative; left: 8vw; top: 30%;
   font-family: 'Noto Serif TC', serif; color: white; font-weight: 500; font-size: 20px; width: 100%;">
-      <div style="font-weight: 700; font-size: 28px;">「你上一次講臺語，是什麼時候？」</div>
-      <div>Lí tíng-pái kóng tâi-gí, sī siánn-mih sî-tsūn</div>
+        <div style="font-weight: 700; font-size: 28px;">「你上一次講臺語，是什麼時候？」</div>
+        <div>Lí tíng-pái kóng tâi-gí, sī siánn-mih sî-tsūn</div>
 
+      </div>
+      <audio id="when_speaking" src="when_speaking.mp3" preload="auto"></audio>
     </div>
-    <audio id="when_speaking" src="when_speaking.mp3" preload="auto"></audio>
   </div>
-</div>
 
 
   <!-- 前言 -->
@@ -205,7 +219,7 @@
   <div id="year_scroll" style="height: 100vh; width: 100vw; overflow:hidden; position: relative;">
     <video style="height: 120vh; position: relative; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);"
       autoplay muted loop src="turning.mp4"></video>
-      <audio id="history" src="history.mp3"></audio>
+    <audio id="history" src="history.mp3"></audio>
 
 
     <p style="position: absolute; font-weight:700; font-size: 18px; color: white; 
@@ -619,22 +633,23 @@
     </p>
   </div>
 
-<div style="height: 200vh;">
-  <div id="ending" class="section"
-    style="position: sticky; top: 0;height: 100vh; width: 100vw; background-color: rgb(41, 41, 41);background-image: url(ending.jpg);">
-    <h1 class="ending-h1">若臺語消失的那天來臨，<br>
-      <span style="font-size: 18px; position: relative; top:-15px; font-weight: 600; opacity: 0.8;">Nā-sī Tâi-gí bô--khì
-        ê hit-kang lâi-kàu，</span><br>
+  <div style="height: 200vh;">
+    <div id="ending" class="section"
+      style="position: sticky; top: 0;height: 100vh; width: 100vw; background-color: rgb(41, 41, 41);background-image: url(ending.jpg);">
+      <h1 class="ending-h1">若臺語消失的那天來臨，<br>
+        <span style="font-size: 18px; position: relative; top:-15px; font-weight: 600; opacity: 0.8;">Nā-sī Tâi-gí
+          bô--khì
+          ê hit-kang lâi-kàu，</span><br>
 
-      某部分的臺灣也將死去。<br>
-      <span style="font-size: 18px; position: relative; top:-15px; font-weight: 600;  opacity: 0.8;">tsi̍t pōo-hūn ê
-        Tâi-uân iā tsiong sí--khì。
-      </span>
-    </h1>
-    <audio id="dying" src="dying.mp3"></audio>
-    
+        某部分的臺灣也將死去。<br>
+        <span style="font-size: 18px; position: relative; top:-15px; font-weight: 600;  opacity: 0.8;">tsi̍t pōo-hūn ê
+          Tâi-uân iā tsiong sí--khì。
+        </span>
+      </h1>
+      <audio id="dying" src="dying.mp3"></audio>
+
+    </div>
   </div>
-</div>
 
   <div id="sunrise" style="height: 100vh; width: 100vw;position: relative; overflow:hidden; background-color: #000;">
     <video style="height: 120vh; position: absolute; left: 50%; top:50%; transform:translateY(-50%) translateX(-50%);"
@@ -734,22 +749,35 @@
         }
       });
 
-      speaking1.onplay = function () {
-        music2.pause();
-      }
-      speaking2.onplay = function () {
-        music2.pause();
-      }
-      speaking3.onplay = function () {
-        music2.pause();
-      }
+      $("#audio_btn3").click(function () {
+        if ($(this).hasClass("audio-play")) {
+          rain.play();
+          heading_speaking.play();
+          $("#audio_btn3").removeClass("audio-play").addClass("audio-pause");
+        } else {
+          rain.pause();
+          heading_speaking.pause();
+          $("#audio_btn3").removeClass("audio-pause").addClass("audio-play");
+        }
+      });
+
+
+      // speaking1.onplay = function () {
+      //   music2.pause();
+      // }
+      // speaking2.onplay = function () {
+      //   music2.pause();
+      // }
+      // speaking3.onplay = function () {
+      //   music2.pause();
+      // }
 
       $(window).scroll(function () {
         var scrolled = $(window).scrollTop();
         if ($("#audio_btn").hasClass("audio-play")) {
           music.pause();
         } else {
-          if (scrolled + winh > $("#audio-01-start").offset().top && scrolled + winh <= $("#audio-01-pause")
+          if (scrolled - 0.1* winh > $("#audio-01-start").offset().top && scrolled + winh <= $("#audio-01-pause")
             .offset().top) {
             music.play();
           }
@@ -774,59 +802,109 @@
         if ($("#audio_btn2").hasClass("audio-play")) {
           music2.pause();
         } else {
-          if (scrolled + winh > $("#audio-02-start").offset().top) {
-            music2.play();
-            // $("#audio_btn").removeClass("audio-play").addClass("audio-pause");
+          // 專訪
+          if (scrolled +0.7*winh > $("#adei").offset().top &&
+            scrolled + 0.9* winh <= $("#fukai").offset().top) {
+            speaking1.play();
+            
+          } else {
+            speaking1.pause();
+            
+          }
+          if (scrolled + 0.7* winh > $("#fukai").offset().top &&
+            scrolled + 0.9* winh <= $("#paisei").offset().top) {
+            speaking2.play();
+            
+          } else {
+            speaking2.pause();
+            
+          }
+          if (scrolled + 0.7* winh > $("#paisei").offset().top &&
+            scrolled + 0.8* winh <= $("#teacher").offset().top) {
+            speaking3.play();
+           
+          } else {
+            speaking3.pause();
           }
 
-
+          if (scrolled + winh > $("#audio-02-start").offset().top) {
+            music2.play();
+            if (scrolled + 0.7*winh > $("#adei").offset().top &&
+            scrolled + 0.8* winh <= $("#teacher").offset().top){
+              music2.volume=0.1;
+            }else{
+              music2.volume=0.8;
+            }
+              
+            }
+          
           if (scrolled + 0.5 * winh < $("#audio-02-start").offset().top) {
             music2.pause();
           }
-
-        }
-
-        // 你上次說台語
-        if (scrolled + 0.2*winh > $("#when_speaking_start").offset().top &&
-          scrolled + 0.5*winh <= $("#preface").offset().top) {
-          when_speaking.play();
-        }else{
-          when_speaking.pause();
-        }
-        // 開頭
-        if (scrolled + 0.5*winh > $("#when_speaking_start").offset().top ) {
-          heading_speaking.pause();
-        }else{
-          heading_speaking.play();
-        }
-        // 雨聲
-        if (scrolled + 0.5*winh > $("#audio-01-start").offset().top ) {
-          rain.pause();
-        }else{
-          rain.play();
-        }
-        // 歷史前
-        if (scrolled - 0.1*winh > $("#audio-01-start").offset().top &&
-          scrolled <= $("#year").offset().top) {
-          history.play();
-        }else{
-          history.pause();
-        }
-        // 死去
-        if (scrolled + 0.2*winh > $("#ending").offset().top &&
-          scrolled + 0.7*winh <= $("#sunrise").offset().top) {
-          dying.play();
+          if (scrolled + 0.2 * winh > $("#ending").offset().top &&
+            scrolled + 0.7 * winh <= $("#sunrise").offset().top){
+              music2.pause();
+            }
           
-        }else{
+          
+
+        }
+
+
+
+        if ($("#audio_btn3").hasClass("audio-play")) {
+          when_speaking.pause();
+          heading_speaking.pause();
+          rain.pause();
+          history.pause();
           dying.pause();
-        }
-        // 結尾
-        if (scrolled + 0.2*winh > $("#sunrise").offset().top ) {
-          ending_speaking.play();
-        }else{
           ending_speaking.pause();
+        } else {
+          // 你上次說台語
+          if (scrolled + 0.2 * winh > $("#when_speaking_start").offset().top &&
+            scrolled + 0.5 * winh <= $("#preface").offset().top) {
+            when_speaking.play();
+          } else {
+            when_speaking.pause();
+          }
+          // 開頭
+          if (scrolled + 0.5 * winh > $("#when_speaking_start").offset().top) {
+            heading_speaking.pause();
+          } else {
+            heading_speaking.play();
+          }
+          // 雨聲
+          if (scrolled + 0.5 * winh > $("#audio-01-start").offset().top) {
+            rain.pause();
+          } else {
+            rain.play();
+          }
+          // 歷史前
+          if (scrolled + winh > $("#audio-01-start").offset().top &&
+            scrolled <= $("#year").offset().top) {
+            history.play();
+          } else {
+            history.pause();
+          }
+          
+
+          // 死去
+          if (scrolled + 0.2 * winh > $("#ending").offset().top &&
+            scrolled + 0.7 * winh <= $("#sunrise").offset().top) {
+            dying.play();
+
+          } else {
+            dying.pause();
+          }
+          // 結尾
+          if (scrolled + 0.2 * winh > $("#sunrise").offset().top) {
+            ending_speaking.play();
+          } else {
+            ending_speaking.pause();
+          }
+
         }
-        
+
 
 
 
